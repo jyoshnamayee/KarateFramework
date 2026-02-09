@@ -1,0 +1,334 @@
+14:47:21.847 [main] DEBUG com.intuit.karate.Suite - [config] classpath:karate-config.js
+14:47:23.879 [main] INFO  com.intuit.karate - karate.env system property was: null 
+14:47:24.632 [main] DEBUG com.intuit.karate - request:
+1 > GET https://api.restful-api.dev/objects
+1 > Content-Type: application/json; charset=UTF-8
+1 > Content-Length: 120
+1 > Host: api.restful-api.dev
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.12 (Java/17.0.10)
+1 > Accept-Encoding: gzip,deflate
+{"name":"Apple MacBook Pro 16","data":{"year":2019,"price":1849.99,"CPU model":"Intel Core i9","Hard disk size":"1 TB"}}
+
+14:47:25.226 [main] DEBUG com.intuit.karate - response time in milliseconds: 586
+1 < 200
+1 < Date: Sun, 08 Feb 2026 09:17:24 GMT
+1 < Content-Type: application/json
+1 < Transfer-Encoding: chunked
+1 < Connection: keep-alive
+1 < Server: cloudflare
+1 < Nel: {"report_to":"cf-nel","success_fraction":0.0,"max_age":604800}
+1 < Vary: Origin
+1 < Vary: Access-Control-Request-Method
+1 < Vary: Access-Control-Request-Headers
+1 < cf-cache-status: DYNAMIC
+1 < Server-Timing: cfCacheStatus;desc="DYNAMIC"
+1 < Server-Timing: cfEdge;dur=68,cfOrigin;dur=61
+1 < Report-To: {"group":"cf-nel","max_age":604800,"endpoints":[{"url":"https://a.nel.cloudflare.com/report/v4?s=YRhPVg7NADeYAmUYm6eXcq0P%2FZzAuyXjN6cVoYs%2BK1kRt2kV%2FmZ8Dx8dApJ0Ca733zvSmKYHNzQjOSdLM0HAqCydrlfmjraLfJ7sTVZfk2K5zLA%3D"}]}
+1 < CF-RAY: 9caa08a0aa353f51-BOM
+1 < alt-svc: h3=":443"; ma=86400
+[{"id":"1","name":"Google Pixel 6 Pro","data":{"color":"Cloudy White","capacity":"128 GB"}},{"id":"2","name":"Apple iPhone 12 Mini, 256GB, Blue","data":null},{"id":"3","name":"Apple iPhone 12 Pro Max","data":{"color":"Cloudy White","capacity GB":512}},{"id":"4","name":"Apple iPhone 11, 64GB","data":{"price":389.99,"color":"Purple"}},{"id":"5","name":"Samsung Galaxy Z Fold2","data":{"price":689.99,"color":"Brown"}},{"id":"6","name":"Apple AirPods","data":{"generation":"3rd","price":120}},{"id":"7","name":"Apple MacBook Pro 16","data":{"year":2019,"price":1849.99,"CPU model":"Intel Core i9","Hard disk size":"1 TB"}},{"id":"8","name":"Apple Watch Series 8","data":{"Strap Colour":"Elderberry","Case Size":"41mm"}},{"id":"9","name":"Beats Studio3 Wireless","data":{"Color":"Red","Description":"High-performance wireless noise cancelling headphones"}},{"id":"10","name":"Apple iPad Mini 5th Gen","data":{"Capacity":"64 GB","Screen size":7.9}},{"id":"11","name":"Apple iPad Mini 5th Gen","data":{"Capacity":"254 GB","Screen size":7.9}},{"id":"12","name":"Apple iPad Air","data":{"Generation":"4th","Price":"419.99","Capacity":"64 GB"}},{"id":"13","name":"Apple iPad Air","data":{"Generation":"4th","Price":"519.99","Capacity":"256 GB"}}]
+
+14:47:25.274 [main] INFO  com.intuit.karate - [print] [
+  {
+    "id": "1",
+    "name": "Google Pixel 6 Pro",
+    "data": {
+      "color": "Cloudy White",
+      "capacity": "128 GB"
+    }
+  },
+  {
+    "id": "2",
+    "name": "Apple iPhone 12 Mini, 256GB, Blue",
+    "data": null
+  },
+  {
+    "id": "3",
+    "name": "Apple iPhone 12 Pro Max",
+    "data": {
+      "color": "Cloudy White",
+      "capacity GB": 512
+    }
+  },
+  {
+    "id": "4",
+    "name": "Apple iPhone 11, 64GB",
+    "data": {
+      "price": 389.99,
+      "color": "Purple"
+    }
+  },
+  {
+    "id": "5",
+    "name": "Samsung Galaxy Z Fold2",
+    "data": {
+      "price": 689.99,
+      "color": "Brown"
+    }
+  },
+  {
+    "id": "6",
+    "name": "Apple AirPods",
+    "data": {
+      "generation": "3rd",
+      "price": 120
+    }
+  },
+  {
+    "id": "7",
+    "name": "Apple MacBook Pro 16",
+    "data": {
+      "year": 2019,
+      "price": 1849.99,
+      "CPU model": "Intel Core i9",
+      "Hard disk size": "1 TB"
+    }
+  },
+  {
+    "id": "8",
+    "name": "Apple Watch Series 8",
+    "data": {
+      "Strap Colour": "Elderberry",
+      "Case Size": "41mm"
+    }
+  },
+  {
+    "id": "9",
+    "name": "Beats Studio3 Wireless",
+    "data": {
+      "Color": "Red",
+      "Description": "High-performance wireless noise cancelling headphones"
+    }
+  },
+  {
+    "id": "10",
+    "name": "Apple iPad Mini 5th Gen",
+    "data": {
+      "Capacity": "64 GB",
+      "Screen size": 7.9
+    }
+  },
+  {
+    "id": "11",
+    "name": "Apple iPad Mini 5th Gen",
+    "data": {
+      "Capacity": "254 GB",
+      "Screen size": 7.9
+    }
+  },
+  {
+    "id": "12",
+    "name": "Apple iPad Air",
+    "data": {
+      "Generation": "4th",
+      "Price": "419.99",
+      "Capacity": "64 GB"
+    }
+  },
+  {
+    "id": "13",
+    "name": "Apple iPad Air",
+    "data": {
+      "Generation": "4th",
+      "Price": "519.99",
+      "Capacity": "256 GB"
+    }
+  }
+]
+ 
+14:47:26.368 [main] INFO  com.intuit.karate - karate.env system property was: null 
+14:47:26.374 [main] DEBUG com.intuit.karate - request:
+1 > GET https://api.restful-api.dev/objects
+1 > Host: api.restful-api.dev
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.12 (Java/17.0.10)
+1 > Accept-Encoding: gzip,deflate
+
+
+14:47:26.611 [main] DEBUG com.intuit.karate - response time in milliseconds: 235
+1 < 200
+1 < Date: Sun, 08 Feb 2026 09:17:25 GMT
+1 < Content-Type: application/json
+1 < Transfer-Encoding: chunked
+1 < Connection: keep-alive
+1 < Server: cloudflare
+1 < Nel: {"report_to":"cf-nel","success_fraction":0.0,"max_age":604800}
+1 < Vary: Origin
+1 < Vary: Access-Control-Request-Method
+1 < Vary: Access-Control-Request-Headers
+1 < cf-cache-status: DYNAMIC
+1 < Server-Timing: cfCacheStatus;desc="DYNAMIC"
+1 < Server-Timing: cfEdge;dur=68,cfOrigin;dur=61
+1 < Report-To: {"group":"cf-nel","max_age":604800,"endpoints":[{"url":"https://a.nel.cloudflare.com/report/v4?s=LTO8GRUm0VfZjaAyH32gc2Sq7ct77NRHYRh3UybM%2Bz3X5YuRiUnnHYHCt%2FE08%2F8aHO6BTY9qqkJ8oqo9i3dQ1rSY2iADjEATWj0n4u4kfu9%2Fplo%3D"}]}
+1 < CF-RAY: 9caa08a97eaa0028-BOM
+1 < alt-svc: h3=":443"; ma=86400
+[{"id":"1","name":"Google Pixel 6 Pro","data":{"color":"Cloudy White","capacity":"128 GB"}},{"id":"2","name":"Apple iPhone 12 Mini, 256GB, Blue","data":null},{"id":"3","name":"Apple iPhone 12 Pro Max","data":{"color":"Cloudy White","capacity GB":512}},{"id":"4","name":"Apple iPhone 11, 64GB","data":{"price":389.99,"color":"Purple"}},{"id":"5","name":"Samsung Galaxy Z Fold2","data":{"price":689.99,"color":"Brown"}},{"id":"6","name":"Apple AirPods","data":{"generation":"3rd","price":120}},{"id":"7","name":"Apple MacBook Pro 16","data":{"year":2019,"price":1849.99,"CPU model":"Intel Core i9","Hard disk size":"1 TB"}},{"id":"8","name":"Apple Watch Series 8","data":{"Strap Colour":"Elderberry","Case Size":"41mm"}},{"id":"9","name":"Beats Studio3 Wireless","data":{"Color":"Red","Description":"High-performance wireless noise cancelling headphones"}},{"id":"10","name":"Apple iPad Mini 5th Gen","data":{"Capacity":"64 GB","Screen size":7.9}},{"id":"11","name":"Apple iPad Mini 5th Gen","data":{"Capacity":"254 GB","Screen size":7.9}},{"id":"12","name":"Apple iPad Air","data":{"Generation":"4th","Price":"419.99","Capacity":"64 GB"}},{"id":"13","name":"Apple iPad Air","data":{"Generation":"4th","Price":"519.99","Capacity":"256 GB"}}]
+
+14:53:10.490 [main] DEBUG com.intuit.karate.Suite - [config] classpath:karate-config.js
+14:53:12.502 [main] INFO  com.intuit.karate - karate.env system property was: null 
+14:53:13.272 [main] DEBUG com.intuit.karate - request:
+1 > GET https://api.restful-api.dev/objects
+1 > Content-Type: application/json; charset=UTF-8
+1 > Content-Length: 120
+1 > Host: api.restful-api.dev
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.12 (Java/17.0.10)
+1 > Accept-Encoding: gzip,deflate
+{"name":"Apple MacBook Pro 16","data":{"year":2019,"price":1849.99,"CPU model":"Intel Core i9","Hard disk size":"1 TB"}}
+
+14:53:13.843 [main] DEBUG com.intuit.karate - response time in milliseconds: 565
+1 < 200
+1 < Date: Sun, 08 Feb 2026 09:23:12 GMT
+1 < Content-Type: application/json
+1 < Transfer-Encoding: chunked
+1 < Connection: keep-alive
+1 < Server: cloudflare
+1 < Nel: {"report_to":"cf-nel","success_fraction":0.0,"max_age":604800}
+1 < Vary: Origin
+1 < Vary: Access-Control-Request-Method
+1 < Vary: Access-Control-Request-Headers
+1 < cf-cache-status: DYNAMIC
+1 < Server-Timing: cfCacheStatus;desc="DYNAMIC"
+1 < Server-Timing: cfEdge;dur=66,cfOrigin;dur=75
+1 < Report-To: {"group":"cf-nel","max_age":604800,"endpoints":[{"url":"https://a.nel.cloudflare.com/report/v4?s=MuPuuc8XW7wZ6cKKxsTfodlOOSmqBOCXdcIK%2FGR0qJ54zqG62kYhXbyBSQdGioW7JNEO1LvNIpQARbx8Jlza3cJ4Xrhu7TBeGHLZUMHYUZ2F5DQ%3D"}]}
+1 < CF-RAY: 9caa11237da6892d-BOM
+1 < alt-svc: h3=":443"; ma=86400
+[{"id":"1","name":"Google Pixel 6 Pro","data":{"color":"Cloudy White","capacity":"128 GB"}},{"id":"2","name":"Apple iPhone 12 Mini, 256GB, Blue","data":null},{"id":"3","name":"Apple iPhone 12 Pro Max","data":{"color":"Cloudy White","capacity GB":512}},{"id":"4","name":"Apple iPhone 11, 64GB","data":{"price":389.99,"color":"Purple"}},{"id":"5","name":"Samsung Galaxy Z Fold2","data":{"price":689.99,"color":"Brown"}},{"id":"6","name":"Apple AirPods","data":{"generation":"3rd","price":120}},{"id":"7","name":"Apple MacBook Pro 16","data":{"year":2019,"price":1849.99,"CPU model":"Intel Core i9","Hard disk size":"1 TB"}},{"id":"8","name":"Apple Watch Series 8","data":{"Strap Colour":"Elderberry","Case Size":"41mm"}},{"id":"9","name":"Beats Studio3 Wireless","data":{"Color":"Red","Description":"High-performance wireless noise cancelling headphones"}},{"id":"10","name":"Apple iPad Mini 5th Gen","data":{"Capacity":"64 GB","Screen size":7.9}},{"id":"11","name":"Apple iPad Mini 5th Gen","data":{"Capacity":"254 GB","Screen size":7.9}},{"id":"12","name":"Apple iPad Air","data":{"Generation":"4th","Price":"419.99","Capacity":"64 GB"}},{"id":"13","name":"Apple iPad Air","data":{"Generation":"4th","Price":"519.99","Capacity":"256 GB"}}]
+
+14:53:13.861 [main] INFO  com.intuit.karate - [print] [
+  {
+    "id": "1",
+    "name": "Google Pixel 6 Pro",
+    "data": {
+      "color": "Cloudy White",
+      "capacity": "128 GB"
+    }
+  },
+  {
+    "id": "2",
+    "name": "Apple iPhone 12 Mini, 256GB, Blue",
+    "data": null
+  },
+  {
+    "id": "3",
+    "name": "Apple iPhone 12 Pro Max",
+    "data": {
+      "color": "Cloudy White",
+      "capacity GB": 512
+    }
+  },
+  {
+    "id": "4",
+    "name": "Apple iPhone 11, 64GB",
+    "data": {
+      "price": 389.99,
+      "color": "Purple"
+    }
+  },
+  {
+    "id": "5",
+    "name": "Samsung Galaxy Z Fold2",
+    "data": {
+      "price": 689.99,
+      "color": "Brown"
+    }
+  },
+  {
+    "id": "6",
+    "name": "Apple AirPods",
+    "data": {
+      "generation": "3rd",
+      "price": 120
+    }
+  },
+  {
+    "id": "7",
+    "name": "Apple MacBook Pro 16",
+    "data": {
+      "year": 2019,
+      "price": 1849.99,
+      "CPU model": "Intel Core i9",
+      "Hard disk size": "1 TB"
+    }
+  },
+  {
+    "id": "8",
+    "name": "Apple Watch Series 8",
+    "data": {
+      "Strap Colour": "Elderberry",
+      "Case Size": "41mm"
+    }
+  },
+  {
+    "id": "9",
+    "name": "Beats Studio3 Wireless",
+    "data": {
+      "Color": "Red",
+      "Description": "High-performance wireless noise cancelling headphones"
+    }
+  },
+  {
+    "id": "10",
+    "name": "Apple iPad Mini 5th Gen",
+    "data": {
+      "Capacity": "64 GB",
+      "Screen size": 7.9
+    }
+  },
+  {
+    "id": "11",
+    "name": "Apple iPad Mini 5th Gen",
+    "data": {
+      "Capacity": "254 GB",
+      "Screen size": 7.9
+    }
+  },
+  {
+    "id": "12",
+    "name": "Apple iPad Air",
+    "data": {
+      "Generation": "4th",
+      "Price": "419.99",
+      "Capacity": "64 GB"
+    }
+  },
+  {
+    "id": "13",
+    "name": "Apple iPad Air",
+    "data": {
+      "Generation": "4th",
+      "Price": "519.99",
+      "Capacity": "256 GB"
+    }
+  }
+]
+ 
+14:53:14.865 [main] INFO  com.intuit.karate - karate.env system property was: null 
+14:53:14.870 [main] DEBUG com.intuit.karate - request:
+1 > GET https://api.restful-api.dev/objects
+1 > Host: api.restful-api.dev
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.12 (Java/17.0.10)
+1 > Accept-Encoding: gzip,deflate
+
+
+14:53:15.113 [main] DEBUG com.intuit.karate - response time in milliseconds: 242
+1 < 200
+1 < Date: Sun, 08 Feb 2026 09:23:13 GMT
+1 < Content-Type: application/json
+1 < Transfer-Encoding: chunked
+1 < Connection: keep-alive
+1 < Server: cloudflare
+1 < Nel: {"report_to":"cf-nel","success_fraction":0.0,"max_age":604800}
+1 < Vary: Origin
+1 < Vary: Access-Control-Request-Method
+1 < Vary: Access-Control-Request-Headers
+1 < cf-cache-status: DYNAMIC
+1 < Server-Timing: cfCacheStatus;desc="DYNAMIC"
+1 < Server-Timing: cfEdge;dur=73,cfOrigin;dur=61
+1 < Report-To: {"group":"cf-nel","max_age":604800,"endpoints":[{"url":"https://a.nel.cloudflare.com/report/v4?s=IErn3rix4Aj89pi2c%2BcfR6ndRrkriRaOiHV%2BL0Fsk0eG7lk2v7tknqmcC7kGWWNaPJMGMrfelBMxi9VAABZp9Phpp0m4K5hwwP6cZgsH3%2FX3w%2FQ%3D"}]}
+1 < CF-RAY: 9caa112b98e30027-BOM
+1 < alt-svc: h3=":443"; ma=86400
+[{"id":"1","name":"Google Pixel 6 Pro","data":{"color":"Cloudy White","capacity":"128 GB"}},{"id":"2","name":"Apple iPhone 12 Mini, 256GB, Blue","data":null},{"id":"3","name":"Apple iPhone 12 Pro Max","data":{"color":"Cloudy White","capacity GB":512}},{"id":"4","name":"Apple iPhone 11, 64GB","data":{"price":389.99,"color":"Purple"}},{"id":"5","name":"Samsung Galaxy Z Fold2","data":{"price":689.99,"color":"Brown"}},{"id":"6","name":"Apple AirPods","data":{"generation":"3rd","price":120}},{"id":"7","name":"Apple MacBook Pro 16","data":{"year":2019,"price":1849.99,"CPU model":"Intel Core i9","Hard disk size":"1 TB"}},{"id":"8","name":"Apple Watch Series 8","data":{"Strap Colour":"Elderberry","Case Size":"41mm"}},{"id":"9","name":"Beats Studio3 Wireless","data":{"Color":"Red","Description":"High-performance wireless noise cancelling headphones"}},{"id":"10","name":"Apple iPad Mini 5th Gen","data":{"Capacity":"64 GB","Screen size":7.9}},{"id":"11","name":"Apple iPad Mini 5th Gen","data":{"Capacity":"254 GB","Screen size":7.9}},{"id":"12","name":"Apple iPad Air","data":{"Generation":"4th","Price":"419.99","Capacity":"64 GB"}},{"id":"13","name":"Apple iPad Air","data":{"Generation":"4th","Price":"519.99","Capacity":"256 GB"}}]
+
