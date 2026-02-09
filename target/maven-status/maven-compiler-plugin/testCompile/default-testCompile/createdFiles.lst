@@ -1,2 +1,3 @@
-com\api\karate\automation\requests\TestGetRunner.class
 com\api\karate\automation\apiCode.class
+com\api\karate\automation\ParallelRunnerTest.class
+com\api\karate\automation\requests\ManualRunner.class

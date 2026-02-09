@@ -1,0 +1,394 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"/>
+    <link rel="stylesheet" href="res/bootstrap.min.css" type="text/css"/>
+    <link rel="stylesheet" href="res/karate-report.css" type="text/css"/>
+    <link rel="shortcut icon" href="favicon.ico"/>
+    <script type="text/javascript" src="res/jquery.min.js"></script>
+    <script type="text/javascript" src="res/jquery.tablesorter.min.js"></script>
+    <script type="text/javascript" src="res/jquery-ui.min.js"></script>
+    <script type="text/javascript" src="res/bootstrap.min.js"></script>
+    <script type="text/javascript" src="res/karate-report.js"></script>
+    <script type="text/javascript" src="res/Resemble.js"></script>
+    <script>
+!function(t,e){var o,n,p,r;e.__SV||(window.posthog=e,e._i=[],e.init=function(i,s,a){function g(t,e){var o=e.split(".");2==o.length&&(t=t[o[0]],e=o[1]),t[e]=function(){t.push([e].concat(Array.prototype.slice.call(arguments,0)))}}(p=t.createElement("script")).type="text/javascript",p.async=!0,p.src=s.api_host+"/static/array.js",(r=t.getElementsByTagName("script")[0]).parentNode.insertBefore(p,r);var u=e;for(void 0!==a?u=e[a]=[]:a="posthog",u.people=u.people||[],u.toString=function(t){var e="posthog";return"posthog"!==a&&(e+="."+a),t||(e+=" (stub)"),e},u.people.toString=function(){return u.toString(1)+".people (stub)"},o="capture identify alias people.set people.set_once set_config register register_once unregister opt_out_capturing has_opted_out_capturing opt_in_capturing reset isFeatureEnabled onFeatureFlags".split(" "),n=0;n<o.length;n++)g(u,o[n]);e._i.push([i,s,a])},e.__SV=1)}(document,window.posthog||[]);
+posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
+  api_host:'https://app.posthog.com',
+  persistence:'localStorage',
+  autocapture:false,
+  capture_pageview:false,
+  api_transport:'sendBeacon',
+  loaded: function(posthog) { 
+    posthog.capture("report_feature",{distinct_id:"98e15306-98e4-41fa-9eb4-f5d8c662819e",karate_version:"1.4.1",karate_meta:null});
+  }
+});
+</script>
+
+    <title>com.api.karate.automation.requests.getRequest</title>
+  </head>
+  <body>
+    <div id="root-container">
+      <div id="leftnav">
+        
+        <div>
+  <div class="nav-logo">
+    <a href="https://karatelabs.io">
+      <img src="karate-labs-logo-ring.svg" alt="Karate Labs"/>
+    </a>
+    <div class="nav-count">
+      <div id="nav-pass" class="bg-success">2</div>
+      <div id="nav-fail" class="bg-danger">0</div>
+    </div>
+  </div>
+  <div id="nav-env">
+    <div></div>
+  </div>
+  <div id="nav-type">
+    <div>Scenarios</div>
+  </div>
+  <div id="nav-date">
+    <div>2026-02-09 12:33:44 pm</div>
+  </div>
+</div>
+
+        <div class="nav-container">
+          <div class="nav-item passed">
+            <a href="#[1:3]"><span>[1:3]</span> <span>Get the list of all objects</span></a>
+          </div>
+          <div class="nav-item passed">
+            <a href="#[2:9]"><span>[2:9]</span> <span>Get the list of all objects</span></a>
+          </div>
+        </div>
+      </div>
+      <div id="content">
+        <div class="page-heading alert alert-primary">
+          <a href="karate-summary.html">Summary</a><span class="feature-label">|</span>
+          <a href="karate-tags.html">Tags</a><span class="feature-label">|</span>
+          <span class="feature-label">Feature:</span>
+          <span class="feature-path">com/api/karate/automation/requests/getRequest.feature</span><span class="feature-label">|</span>
+          <span class="feature-name">Get request list of all objects</span>
+          <span class="feature-description"></span>
+        </div>
+        <div class="scenario">
+          <div class="scenario-heading" id="[1:3]">
+            <div class="heading-container">
+              <div class="scenario-tags">
+                
+              </div>
+              <div class="scenario-keyword">
+                Scenario: <span>[1:3]</span>
+                <span class="scenario-name">Get the list of all objects</span>
+                <span></span>
+              </div>
+            </div>
+            <div class="scenario-time passed">
+              <span>ms:</span>&nbsp;<span>1028</span>
+            </div>
+          </div>
+          
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.4">
+      <div class="step-ref passed">4</div>
+      
+      <div class="step-cell passed">
+        <span>Given</span>&nbsp;<span>url &#39;https://api.restful-api.dev&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">2</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.4">12:33:43.488 karate.env system property was: null 
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.5">
+      <div class="step-ref passed">5</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>path  &#39;objects&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.6">
+      <div class="step-ref passed">6</div>
+      
+      <div class="step-cell passed">
+        <span>When</span>&nbsp;<span>method get</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1026</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.6">12:33:44.042 request:
+1 &gt; GET https://api.restful-api.dev/objects
+1 &gt; Host: api.restful-api.dev
+1 &gt; Connection: Keep-Alive
+1 &gt; User-Agent: Apache-HttpClient/4.5.12 (Java/17.0.10)
+1 &gt; Accept-Encoding: gzip,deflate
+
+
+12:33:44.572 response time in milliseconds: 525
+1 &lt; 200
+1 &lt; Date: Mon, 09 Feb 2026 07:03:44 GMT
+1 &lt; Content-Type: application/json
+1 &lt; Transfer-Encoding: chunked
+1 &lt; Connection: keep-alive
+1 &lt; Server: cloudflare
+1 &lt; Nel: {&quot;report_to&quot;:&quot;cf-nel&quot;,&quot;success_fraction&quot;:0.0,&quot;max_age&quot;:604800}
+1 &lt; Vary: Origin
+1 &lt; Vary: Access-Control-Request-Method
+1 &lt; Vary: Access-Control-Request-Headers
+1 &lt; cf-cache-status: DYNAMIC
+1 &lt; Server-Timing: cfCacheStatus;desc=&quot;DYNAMIC&quot;
+1 &lt; Server-Timing: cfEdge;dur=57,cfOrigin;dur=69
+1 &lt; Report-To: {&quot;group&quot;:&quot;cf-nel&quot;,&quot;max_age&quot;:604800,&quot;endpoints&quot;:[{&quot;url&quot;:&quot;https://a.nel.cloudflare.com/report/v4?s=JO8DlkDQdIxSO0CyNwMJ7w1RdwheWBjmnN7iz%2FPWwq0BoYQo2Aa1qbBhU7wdY46725DKGgl10dL4yEscFpZqv5JyrQcBd6hqxPtlR7qOCtnaZEA%3D&quot;}]}
+1 &lt; CF-RAY: 9cb18233c8eb3b49-BOM
+1 &lt; alt-svc: h3=&quot;:443&quot;; ma=86400
+[{&quot;id&quot;:&quot;1&quot;,&quot;name&quot;:&quot;Google Pixel 6 Pro&quot;,&quot;data&quot;:{&quot;color&quot;:&quot;Cloudy White&quot;,&quot;capacity&quot;:&quot;128 GB&quot;}},{&quot;id&quot;:&quot;2&quot;,&quot;name&quot;:&quot;Apple iPhone 12 Mini, 256GB, Blue&quot;,&quot;data&quot;:null},{&quot;id&quot;:&quot;3&quot;,&quot;name&quot;:&quot;Apple iPhone 12 Pro Max&quot;,&quot;data&quot;:{&quot;color&quot;:&quot;Cloudy White&quot;,&quot;capacity GB&quot;:512}},{&quot;id&quot;:&quot;4&quot;,&quot;name&quot;:&quot;Apple iPhone 11, 64GB&quot;,&quot;data&quot;:{&quot;price&quot;:389.99,&quot;color&quot;:&quot;Purple&quot;}},{&quot;id&quot;:&quot;5&quot;,&quot;name&quot;:&quot;Samsung Galaxy Z Fold2&quot;,&quot;data&quot;:{&quot;price&quot;:689.99,&quot;color&quot;:&quot;Brown&quot;}},{&quot;id&quot;:&quot;6&quot;,&quot;name&quot;:&quot;Apple AirPods&quot;,&quot;data&quot;:{&quot;generation&quot;:&quot;3rd&quot;,&quot;price&quot;:120}},{&quot;id&quot;:&quot;7&quot;,&quot;name&quot;:&quot;Apple MacBook Pro 16&quot;,&quot;data&quot;:{&quot;year&quot;:2019,&quot;price&quot;:1849.99,&quot;CPU model&quot;:&quot;Intel Core i9&quot;,&quot;Hard disk size&quot;:&quot;1 TB&quot;}},{&quot;id&quot;:&quot;8&quot;,&quot;name&quot;:&quot;Apple Watch Series 8&quot;,&quot;data&quot;:{&quot;Strap Colour&quot;:&quot;Elderberry&quot;,&quot;Case Size&quot;:&quot;41mm&quot;}},{&quot;id&quot;:&quot;9&quot;,&quot;name&quot;:&quot;Beats Studio3 Wireless&quot;,&quot;data&quot;:{&quot;Color&quot;:&quot;Red&quot;,&quot;Description&quot;:&quot;High-performance wireless noise cancelling headphones&quot;}},{&quot;id&quot;:&quot;10&quot;,&quot;name&quot;:&quot;Apple iPad Mini 5th Gen&quot;,&quot;data&quot;:{&quot;Capacity&quot;:&quot;64 GB&quot;,&quot;Screen size&quot;:7.9}},{&quot;id&quot;:&quot;11&quot;,&quot;name&quot;:&quot;Apple iPad Mini 5th Gen&quot;,&quot;data&quot;:{&quot;Capacity&quot;:&quot;254 GB&quot;,&quot;Screen size&quot;:7.9}},{&quot;id&quot;:&quot;12&quot;,&quot;name&quot;:&quot;Apple iPad Air&quot;,&quot;data&quot;:{&quot;Generation&quot;:&quot;4th&quot;,&quot;Price&quot;:&quot;419.99&quot;,&quot;Capacity&quot;:&quot;64 GB&quot;}},{&quot;id&quot;:&quot;13&quot;,&quot;name&quot;:&quot;Apple iPad Air&quot;,&quot;data&quot;:{&quot;Generation&quot;:&quot;4th&quot;,&quot;Price&quot;:&quot;519.99&quot;,&quot;Capacity&quot;:&quot;256 GB&quot;}}]
+
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.7">
+      <div class="step-ref passed">7</div>
+      
+      <div class="step-cell passed">
+        <span>Then</span>&nbsp;<span>status 200</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+        </div>
+        <div class="scenario">
+          <div class="scenario-heading" id="[2:9]">
+            <div class="heading-container">
+              <div class="scenario-tags">
+                
+              </div>
+              <div class="scenario-keyword">
+                Scenario: <span>[2:9]</span>
+                <span class="scenario-name">Get the list of all objects</span>
+                <span></span>
+              </div>
+            </div>
+            <div class="scenario-time passed">
+              <span>ms:</span>&nbsp;<span>1028</span>
+            </div>
+          </div>
+          
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.10">
+      <div class="step-ref passed">10</div>
+      
+      <div class="step-cell passed">
+        <span>Given</span>&nbsp;<span>url &#39;https://api.restful-api.dev&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">2</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.10">12:33:43.488 karate.env system property was: null 
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.11">
+      <div class="step-ref passed">11</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>path  &#39;objects&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.12">
+      <div class="step-ref passed">12</div>
+      
+      <div class="step-cell passed">
+        <span>When</span>&nbsp;<span>method get</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1026</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.12">12:33:44.042 request:
+1 &gt; GET https://api.restful-api.dev/objects
+1 &gt; Host: api.restful-api.dev
+1 &gt; Connection: Keep-Alive
+1 &gt; User-Agent: Apache-HttpClient/4.5.12 (Java/17.0.10)
+1 &gt; Accept-Encoding: gzip,deflate
+
+
+12:33:44.572 response time in milliseconds: 526
+1 &lt; 200
+1 &lt; Date: Mon, 09 Feb 2026 07:03:44 GMT
+1 &lt; Content-Type: application/json
+1 &lt; Transfer-Encoding: chunked
+1 &lt; Connection: keep-alive
+1 &lt; Server: cloudflare
+1 &lt; Nel: {&quot;report_to&quot;:&quot;cf-nel&quot;,&quot;success_fraction&quot;:0.0,&quot;max_age&quot;:604800}
+1 &lt; Vary: Origin
+1 &lt; Vary: Access-Control-Request-Method
+1 &lt; Vary: Access-Control-Request-Headers
+1 &lt; cf-cache-status: DYNAMIC
+1 &lt; Server-Timing: cfCacheStatus;desc=&quot;DYNAMIC&quot;
+1 &lt; Server-Timing: cfEdge;dur=81,cfOrigin;dur=76
+1 &lt; Report-To: {&quot;group&quot;:&quot;cf-nel&quot;,&quot;max_age&quot;:604800,&quot;endpoints&quot;:[{&quot;url&quot;:&quot;https://a.nel.cloudflare.com/report/v4?s=dOYGVbPKOjBZ1H4%2Fbwf6HUiYeUHFWM%2Fx2qzZUbQMUqS2DlYgLnyLUmhxh1t29ujnzp9%2FioER7dGk52Ty3MR%2Fm99avjjtum%2F5%2BxTy5GxsybwFqL8%3D&quot;}]}
+1 &lt; CF-RAY: 9cb18233d8280b23-BOM
+1 &lt; alt-svc: h3=&quot;:443&quot;; ma=86400
+[{&quot;id&quot;:&quot;1&quot;,&quot;name&quot;:&quot;Google Pixel 6 Pro&quot;,&quot;data&quot;:{&quot;color&quot;:&quot;Cloudy White&quot;,&quot;capacity&quot;:&quot;128 GB&quot;}},{&quot;id&quot;:&quot;2&quot;,&quot;name&quot;:&quot;Apple iPhone 12 Mini, 256GB, Blue&quot;,&quot;data&quot;:null},{&quot;id&quot;:&quot;3&quot;,&quot;name&quot;:&quot;Apple iPhone 12 Pro Max&quot;,&quot;data&quot;:{&quot;color&quot;:&quot;Cloudy White&quot;,&quot;capacity GB&quot;:512}},{&quot;id&quot;:&quot;4&quot;,&quot;name&quot;:&quot;Apple iPhone 11, 64GB&quot;,&quot;data&quot;:{&quot;price&quot;:389.99,&quot;color&quot;:&quot;Purple&quot;}},{&quot;id&quot;:&quot;5&quot;,&quot;name&quot;:&quot;Samsung Galaxy Z Fold2&quot;,&quot;data&quot;:{&quot;price&quot;:689.99,&quot;color&quot;:&quot;Brown&quot;}},{&quot;id&quot;:&quot;6&quot;,&quot;name&quot;:&quot;Apple AirPods&quot;,&quot;data&quot;:{&quot;generation&quot;:&quot;3rd&quot;,&quot;price&quot;:120}},{&quot;id&quot;:&quot;7&quot;,&quot;name&quot;:&quot;Apple MacBook Pro 16&quot;,&quot;data&quot;:{&quot;year&quot;:2019,&quot;price&quot;:1849.99,&quot;CPU model&quot;:&quot;Intel Core i9&quot;,&quot;Hard disk size&quot;:&quot;1 TB&quot;}},{&quot;id&quot;:&quot;8&quot;,&quot;name&quot;:&quot;Apple Watch Series 8&quot;,&quot;data&quot;:{&quot;Strap Colour&quot;:&quot;Elderberry&quot;,&quot;Case Size&quot;:&quot;41mm&quot;}},{&quot;id&quot;:&quot;9&quot;,&quot;name&quot;:&quot;Beats Studio3 Wireless&quot;,&quot;data&quot;:{&quot;Color&quot;:&quot;Red&quot;,&quot;Description&quot;:&quot;High-performance wireless noise cancelling headphones&quot;}},{&quot;id&quot;:&quot;10&quot;,&quot;name&quot;:&quot;Apple iPad Mini 5th Gen&quot;,&quot;data&quot;:{&quot;Capacity&quot;:&quot;64 GB&quot;,&quot;Screen size&quot;:7.9}},{&quot;id&quot;:&quot;11&quot;,&quot;name&quot;:&quot;Apple iPad Mini 5th Gen&quot;,&quot;data&quot;:{&quot;Capacity&quot;:&quot;254 GB&quot;,&quot;Screen size&quot;:7.9}},{&quot;id&quot;:&quot;12&quot;,&quot;name&quot;:&quot;Apple iPad Air&quot;,&quot;data&quot;:{&quot;Generation&quot;:&quot;4th&quot;,&quot;Price&quot;:&quot;419.99&quot;,&quot;Capacity&quot;:&quot;64 GB&quot;}},{&quot;id&quot;:&quot;13&quot;,&quot;name&quot;:&quot;Apple iPad Air&quot;,&quot;data&quot;:{&quot;Generation&quot;:&quot;4th&quot;,&quot;Price&quot;:&quot;519.99&quot;,&quot;Capacity&quot;:&quot;256 GB&quot;}}]
+
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.13">
+      <div class="step-ref passed">13</div>
+      
+      <div class="step-cell passed">
+        <span>Then</span>&nbsp;<span>status 200</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
+

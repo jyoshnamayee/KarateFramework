@@ -332,3 +332,532 @@
 1 < alt-svc: h3=":443"; ma=86400
 [{"id":"1","name":"Google Pixel 6 Pro","data":{"color":"Cloudy White","capacity":"128 GB"}},{"id":"2","name":"Apple iPhone 12 Mini, 256GB, Blue","data":null},{"id":"3","name":"Apple iPhone 12 Pro Max","data":{"color":"Cloudy White","capacity GB":512}},{"id":"4","name":"Apple iPhone 11, 64GB","data":{"price":389.99,"color":"Purple"}},{"id":"5","name":"Samsung Galaxy Z Fold2","data":{"price":689.99,"color":"Brown"}},{"id":"6","name":"Apple AirPods","data":{"generation":"3rd","price":120}},{"id":"7","name":"Apple MacBook Pro 16","data":{"year":2019,"price":1849.99,"CPU model":"Intel Core i9","Hard disk size":"1 TB"}},{"id":"8","name":"Apple Watch Series 8","data":{"Strap Colour":"Elderberry","Case Size":"41mm"}},{"id":"9","name":"Beats Studio3 Wireless","data":{"Color":"Red","Description":"High-performance wireless noise cancelling headphones"}},{"id":"10","name":"Apple iPad Mini 5th Gen","data":{"Capacity":"64 GB","Screen size":7.9}},{"id":"11","name":"Apple iPad Mini 5th Gen","data":{"Capacity":"254 GB","Screen size":7.9}},{"id":"12","name":"Apple iPad Air","data":{"Generation":"4th","Price":"419.99","Capacity":"64 GB"}},{"id":"13","name":"Apple iPad Air","data":{"Generation":"4th","Price":"519.99","Capacity":"256 GB"}}]
 
+12:33:41.976 [main] DEBUG com.intuit.karate.Suite - [config] classpath:karate-config.js
+12:33:41.993 [main] INFO  com.intuit.karate.Suite - backed up existing 'target\karate-reports' dir to: target\karate-reports_1770620621985
+12:33:42.006 [main] DEBUG com.intuit.karate.Suite - waiting for 3 features to complete
+12:33:43.485 [pool-1-thread-3] INFO  com.intuit.karate - karate.env system property was: null 
+12:33:43.485 [pool-1-thread-2] INFO  com.intuit.karate - karate.env system property was: null 
+12:33:43.485 [pool-1-thread-4] INFO  com.intuit.karate - karate.env system property was: null 
+12:33:43.485 [pool-1-thread-1] INFO  com.intuit.karate - karate.env system property was: null 
+12:33:44.042 [pool-1-thread-1] DEBUG com.intuit.karate - request:
+1 > GET https://api.restful-api.dev/objects
+1 > Host: api.restful-api.dev
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.12 (Java/17.0.10)
+1 > Accept-Encoding: gzip,deflate
+
+
+12:33:44.042 [pool-1-thread-2] DEBUG com.intuit.karate - request:
+1 > GET https://api.restful-api.dev/objects
+1 > Host: api.restful-api.dev
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.12 (Java/17.0.10)
+1 > Accept-Encoding: gzip,deflate
+
+
+12:33:44.042 [pool-1-thread-4] DEBUG com.intuit.karate - request:
+1 > PATCH https://api.restful-api.dev/objects/ff8081819782e69e019c40f10e582bb6
+1 > Content-Type: application/json; charset=UTF-8
+1 > Content-Length: 137
+1 > Host: api.restful-api.dev
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.12 (Java/17.0.10)
+1 > Accept-Encoding: gzip,deflate
+{"name":"Apple MacBook Pro 17","data":{"year":2024,"price":2049.99,"CPU model":"Intel Core i9","Hard disk size":"1 TB","color":"silver"}}
+
+12:33:44.042 [pool-1-thread-3] DEBUG com.intuit.karate - request:
+1 > POST https://api.restful-api.dev/objects
+1 > Content-Type: application/json; charset=UTF-8
+1 > Content-Length: 120
+1 > Host: api.restful-api.dev
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.12 (Java/17.0.10)
+1 > Accept-Encoding: gzip,deflate
+{"name":"Apple MacBook Pro 17","data":{"year":2024,"price":1849.99,"CPU model":"Intel Core i9","Hard disk size":"1 TB"}}
+
+12:33:44.570 [pool-1-thread-4] DEBUG com.intuit.karate - response time in milliseconds: 525
+1 < 200
+1 < Date: Mon, 09 Feb 2026 07:03:44 GMT
+1 < Content-Type: application/json
+1 < Transfer-Encoding: chunked
+1 < Connection: keep-alive
+1 < Server: cloudflare
+1 < Nel: {"report_to":"cf-nel","success_fraction":0.0,"max_age":604800}
+1 < Vary: Origin
+1 < Vary: Access-Control-Request-Method
+1 < Vary: Access-Control-Request-Headers
+1 < cf-cache-status: DYNAMIC
+1 < Server-Timing: cfCacheStatus;desc="DYNAMIC"
+1 < Server-Timing: cfEdge;dur=56,cfOrigin;dur=73
+1 < Report-To: {"group":"cf-nel","max_age":604800,"endpoints":[{"url":"https://a.nel.cloudflare.com/report/v4?s=7sXeTtasaCNxj9htzAA9SI4Y%2BnWUL%2BVEPS%2B9Mfh9rip4mMJwVZU%2F6NnBx3lDTn89df5xZ9APHLu%2FFgkdOgnv3ubmAfJVp9EgjtmwXTXjJtkQLgw%3D"}]}
+1 < CF-RAY: 9cb18233cbf4ff6a-BOM
+1 < alt-svc: h3=":443"; ma=86400
+{"id":"ff8081819782e69e019c40f10e582bb6","name":"Apple MacBook Pro 17","updatedAt":"2026-02-09T05:54:02.246+00:00","data":{"year":2024,"price":2049.99,"CPU model":"Intel Core i9","Hard disk size":"1 TB","color":"silver"}}
+
+12:33:44.570 [pool-1-thread-2] DEBUG com.intuit.karate - response time in milliseconds: 526
+1 < 200
+1 < Date: Mon, 09 Feb 2026 07:03:44 GMT
+1 < Content-Type: application/json
+1 < Transfer-Encoding: chunked
+1 < Connection: keep-alive
+1 < Server: cloudflare
+1 < Nel: {"report_to":"cf-nel","success_fraction":0.0,"max_age":604800}
+1 < Vary: Origin
+1 < Vary: Access-Control-Request-Method
+1 < Vary: Access-Control-Request-Headers
+1 < cf-cache-status: DYNAMIC
+1 < Server-Timing: cfCacheStatus;desc="DYNAMIC"
+1 < Server-Timing: cfEdge;dur=81,cfOrigin;dur=76
+1 < Report-To: {"group":"cf-nel","max_age":604800,"endpoints":[{"url":"https://a.nel.cloudflare.com/report/v4?s=dOYGVbPKOjBZ1H4%2Fbwf6HUiYeUHFWM%2Fx2qzZUbQMUqS2DlYgLnyLUmhxh1t29ujnzp9%2FioER7dGk52Ty3MR%2Fm99avjjtum%2F5%2BxTy5GxsybwFqL8%3D"}]}
+1 < CF-RAY: 9cb18233d8280b23-BOM
+1 < alt-svc: h3=":443"; ma=86400
+[{"id":"1","name":"Google Pixel 6 Pro","data":{"color":"Cloudy White","capacity":"128 GB"}},{"id":"2","name":"Apple iPhone 12 Mini, 256GB, Blue","data":null},{"id":"3","name":"Apple iPhone 12 Pro Max","data":{"color":"Cloudy White","capacity GB":512}},{"id":"4","name":"Apple iPhone 11, 64GB","data":{"price":389.99,"color":"Purple"}},{"id":"5","name":"Samsung Galaxy Z Fold2","data":{"price":689.99,"color":"Brown"}},{"id":"6","name":"Apple AirPods","data":{"generation":"3rd","price":120}},{"id":"7","name":"Apple MacBook Pro 16","data":{"year":2019,"price":1849.99,"CPU model":"Intel Core i9","Hard disk size":"1 TB"}},{"id":"8","name":"Apple Watch Series 8","data":{"Strap Colour":"Elderberry","Case Size":"41mm"}},{"id":"9","name":"Beats Studio3 Wireless","data":{"Color":"Red","Description":"High-performance wireless noise cancelling headphones"}},{"id":"10","name":"Apple iPad Mini 5th Gen","data":{"Capacity":"64 GB","Screen size":7.9}},{"id":"11","name":"Apple iPad Mini 5th Gen","data":{"Capacity":"254 GB","Screen size":7.9}},{"id":"12","name":"Apple iPad Air","data":{"Generation":"4th","Price":"419.99","Capacity":"64 GB"}},{"id":"13","name":"Apple iPad Air","data":{"Generation":"4th","Price":"519.99","Capacity":"256 GB"}}]
+
+12:33:44.570 [pool-1-thread-1] DEBUG com.intuit.karate - response time in milliseconds: 525
+1 < 200
+1 < Date: Mon, 09 Feb 2026 07:03:44 GMT
+1 < Content-Type: application/json
+1 < Transfer-Encoding: chunked
+1 < Connection: keep-alive
+1 < Server: cloudflare
+1 < Nel: {"report_to":"cf-nel","success_fraction":0.0,"max_age":604800}
+1 < Vary: Origin
+1 < Vary: Access-Control-Request-Method
+1 < Vary: Access-Control-Request-Headers
+1 < cf-cache-status: DYNAMIC
+1 < Server-Timing: cfCacheStatus;desc="DYNAMIC"
+1 < Server-Timing: cfEdge;dur=57,cfOrigin;dur=69
+1 < Report-To: {"group":"cf-nel","max_age":604800,"endpoints":[{"url":"https://a.nel.cloudflare.com/report/v4?s=JO8DlkDQdIxSO0CyNwMJ7w1RdwheWBjmnN7iz%2FPWwq0BoYQo2Aa1qbBhU7wdY46725DKGgl10dL4yEscFpZqv5JyrQcBd6hqxPtlR7qOCtnaZEA%3D"}]}
+1 < CF-RAY: 9cb18233c8eb3b49-BOM
+1 < alt-svc: h3=":443"; ma=86400
+[{"id":"1","name":"Google Pixel 6 Pro","data":{"color":"Cloudy White","capacity":"128 GB"}},{"id":"2","name":"Apple iPhone 12 Mini, 256GB, Blue","data":null},{"id":"3","name":"Apple iPhone 12 Pro Max","data":{"color":"Cloudy White","capacity GB":512}},{"id":"4","name":"Apple iPhone 11, 64GB","data":{"price":389.99,"color":"Purple"}},{"id":"5","name":"Samsung Galaxy Z Fold2","data":{"price":689.99,"color":"Brown"}},{"id":"6","name":"Apple AirPods","data":{"generation":"3rd","price":120}},{"id":"7","name":"Apple MacBook Pro 16","data":{"year":2019,"price":1849.99,"CPU model":"Intel Core i9","Hard disk size":"1 TB"}},{"id":"8","name":"Apple Watch Series 8","data":{"Strap Colour":"Elderberry","Case Size":"41mm"}},{"id":"9","name":"Beats Studio3 Wireless","data":{"Color":"Red","Description":"High-performance wireless noise cancelling headphones"}},{"id":"10","name":"Apple iPad Mini 5th Gen","data":{"Capacity":"64 GB","Screen size":7.9}},{"id":"11","name":"Apple iPad Mini 5th Gen","data":{"Capacity":"254 GB","Screen size":7.9}},{"id":"12","name":"Apple iPad Air","data":{"Generation":"4th","Price":"419.99","Capacity":"64 GB"}},{"id":"13","name":"Apple iPad Air","data":{"Generation":"4th","Price":"519.99","Capacity":"256 GB"}}]
+
+12:33:44.576 [pool-1-thread-3] DEBUG com.intuit.karate - response time in milliseconds: 531
+1 < 200
+1 < Date: Mon, 09 Feb 2026 07:03:44 GMT
+1 < Content-Type: application/json
+1 < Transfer-Encoding: chunked
+1 < Connection: keep-alive
+1 < Server: cloudflare
+1 < Nel: {"report_to":"cf-nel","success_fraction":0.0,"max_age":604800}
+1 < Vary: Origin
+1 < Vary: Access-Control-Request-Method
+1 < Vary: Access-Control-Request-Headers
+1 < cf-cache-status: DYNAMIC
+1 < Server-Timing: cfCacheStatus;desc="DYNAMIC"
+1 < Server-Timing: cfEdge;dur=61,cfOrigin;dur=101
+1 < Report-To: {"group":"cf-nel","max_age":604800,"endpoints":[{"url":"https://a.nel.cloudflare.com/report/v4?s=4qo10oxq4Xs4kEdTznIpHzjc%2FuI87KLhWPN%2BIvvVX9zQk%2FBvIAIE9CCfyEzy1cyhA3tufh1ZLI31i5BdOygY3ntrK9C9N1yALO2ks5YDh%2Btu3FQ%3D"}]}
+1 < CF-RAY: 9cb18233cebc4710-BOM
+1 < alt-svc: h3=":443"; ma=86400
+{"id":"ff8081819782e69e019c41369cb92c2e","name":"Apple MacBook Pro 17","createdAt":"2026-02-09T07:03:44.057+00:00","data":{"year":2024,"price":1849.99,"CPU model":"Intel Core i9","Hard disk size":"1 TB"}}
+
+12:33:44.581 [pool-1-thread-3] INFO  com.intuit.karate - [print] {
+  "id": "ff8081819782e69e019c41369cb92c2e",
+  "name": "Apple MacBook Pro 17",
+  "createdAt": "2026-02-09T07:03:44.057+00:00",
+  "data": {
+    "year": 2024,
+    "price": 1849.99,
+    "CPU model": "Intel Core i9",
+    "Hard disk size": "1 TB"
+  }
+}
+ 
+12:33:44.581 [pool-1-thread-4] INFO  com.intuit.karate - [print] {
+  "id": "ff8081819782e69e019c40f10e582bb6",
+  "name": "Apple MacBook Pro 17",
+  "updatedAt": "2026-02-09T05:54:02.246+00:00",
+  "data": {
+    "year": 2024,
+    "price": 2049.99,
+    "CPU model": "Intel Core i9",
+    "Hard disk size": "1 TB",
+    "color": "silver"
+  }
+}
+ 
+12:33:45.414 [pool-2-thread-1] INFO  com.intuit.karate.Suite - <<pass>> feature 1 of 3 (2 remaining) classpath:com/api/karate/automation/requests/getRequest.feature
+12:33:45.505 [pool-2-thread-1] INFO  com.intuit.karate.Suite - <<pass>> feature 2 of 3 (1 remaining) classpath:com/api/karate/automation/requests/postRequest.feature
+12:33:45.621 [pool-2-thread-1] INFO  com.intuit.karate.Suite - <<pass>> feature 3 of 3 (0 remaining) classpath:com/api/karate/automation/requests/putRequest.feature
+12:34:24.398 [main] DEBUG com.intuit.karate.Suite - [config] classpath:karate-config.js
+12:34:24.410 [main] INFO  com.intuit.karate.Suite - backed up existing 'target\karate-reports' dir to: target\karate-reports_1770620664404
+12:34:24.419 [main] DEBUG com.intuit.karate.Suite - waiting for 3 features to complete
+12:34:25.849 [pool-1-thread-1] INFO  com.intuit.karate - karate.env system property was: null 
+12:34:25.849 [pool-1-thread-3] INFO  com.intuit.karate - karate.env system property was: null 
+12:34:25.849 [pool-1-thread-2] INFO  com.intuit.karate - karate.env system property was: null 
+12:34:25.849 [pool-1-thread-4] INFO  com.intuit.karate - karate.env system property was: null 
+12:34:26.307 [pool-1-thread-2] DEBUG com.intuit.karate - request:
+1 > GET https://api.restful-api.dev/objects
+1 > Host: api.restful-api.dev
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.12 (Java/17.0.10)
+1 > Accept-Encoding: gzip,deflate
+
+
+12:34:26.307 [pool-1-thread-1] DEBUG com.intuit.karate - request:
+1 > GET https://api.restful-api.dev/objects
+1 > Host: api.restful-api.dev
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.12 (Java/17.0.10)
+1 > Accept-Encoding: gzip,deflate
+
+
+12:34:26.307 [pool-1-thread-4] DEBUG com.intuit.karate - request:
+1 > PATCH https://api.restful-api.dev/objects/ff8081819782e69e019c40f10e582bb6
+1 > Content-Type: application/json; charset=UTF-8
+1 > Content-Length: 137
+1 > Host: api.restful-api.dev
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.12 (Java/17.0.10)
+1 > Accept-Encoding: gzip,deflate
+{"name":"Apple MacBook Pro 17","data":{"year":2024,"price":2049.99,"CPU model":"Intel Core i9","Hard disk size":"1 TB","color":"silver"}}
+
+12:34:26.307 [pool-1-thread-3] DEBUG com.intuit.karate - request:
+1 > POST https://api.restful-api.dev/objects
+1 > Content-Type: application/json; charset=UTF-8
+1 > Content-Length: 120
+1 > Host: api.restful-api.dev
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.12 (Java/17.0.10)
+1 > Accept-Encoding: gzip,deflate
+{"name":"Apple MacBook Pro 17","data":{"year":2024,"price":1849.99,"CPU model":"Intel Core i9","Hard disk size":"1 TB"}}
+
+12:34:26.801 [pool-1-thread-2] DEBUG com.intuit.karate - response time in milliseconds: 490
+1 < 200
+1 < Date: Mon, 09 Feb 2026 07:04:26 GMT
+1 < Content-Type: application/json
+1 < Transfer-Encoding: chunked
+1 < Connection: keep-alive
+1 < Server: cloudflare
+1 < Nel: {"report_to":"cf-nel","success_fraction":0.0,"max_age":604800}
+1 < Vary: Origin
+1 < Vary: Access-Control-Request-Method
+1 < Vary: Access-Control-Request-Headers
+1 < cf-cache-status: DYNAMIC
+1 < Server-Timing: cfCacheStatus;desc="DYNAMIC"
+1 < Server-Timing: cfEdge;dur=74,cfOrigin;dur=61
+1 < Report-To: {"group":"cf-nel","max_age":604800,"endpoints":[{"url":"https://a.nel.cloudflare.com/report/v4?s=srA650ZeDncteyAAYCL6xoUrecZDNGOLaK9rZsoi6xAwpfjRVAgttRu2gUoSDa5ohwf4baPQGMV72SGXKYNcKiMVLbARHXqK7jyO8lTuZ3Q93xI%3D"}]}
+1 < CF-RAY: 9cb1833bdcf25644-BOM
+1 < alt-svc: h3=":443"; ma=86400
+[{"id":"1","name":"Google Pixel 6 Pro","data":{"color":"Cloudy White","capacity":"128 GB"}},{"id":"2","name":"Apple iPhone 12 Mini, 256GB, Blue","data":null},{"id":"3","name":"Apple iPhone 12 Pro Max","data":{"color":"Cloudy White","capacity GB":512}},{"id":"4","name":"Apple iPhone 11, 64GB","data":{"price":389.99,"color":"Purple"}},{"id":"5","name":"Samsung Galaxy Z Fold2","data":{"price":689.99,"color":"Brown"}},{"id":"6","name":"Apple AirPods","data":{"generation":"3rd","price":120}},{"id":"7","name":"Apple MacBook Pro 16","data":{"year":2019,"price":1849.99,"CPU model":"Intel Core i9","Hard disk size":"1 TB"}},{"id":"8","name":"Apple Watch Series 8","data":{"Strap Colour":"Elderberry","Case Size":"41mm"}},{"id":"9","name":"Beats Studio3 Wireless","data":{"Color":"Red","Description":"High-performance wireless noise cancelling headphones"}},{"id":"10","name":"Apple iPad Mini 5th Gen","data":{"Capacity":"64 GB","Screen size":7.9}},{"id":"11","name":"Apple iPad Mini 5th Gen","data":{"Capacity":"254 GB","Screen size":7.9}},{"id":"12","name":"Apple iPad Air","data":{"Generation":"4th","Price":"419.99","Capacity":"64 GB"}},{"id":"13","name":"Apple iPad Air","data":{"Generation":"4th","Price":"519.99","Capacity":"256 GB"}}]
+
+12:34:26.801 [pool-1-thread-4] DEBUG com.intuit.karate - response time in milliseconds: 489
+1 < 200
+1 < Date: Mon, 09 Feb 2026 07:04:26 GMT
+1 < Content-Type: application/json
+1 < Transfer-Encoding: chunked
+1 < Connection: keep-alive
+1 < Server: cloudflare
+1 < Nel: {"report_to":"cf-nel","success_fraction":0.0,"max_age":604800}
+1 < Vary: Origin
+1 < Vary: Access-Control-Request-Method
+1 < Vary: Access-Control-Request-Headers
+1 < cf-cache-status: DYNAMIC
+1 < Server-Timing: cfCacheStatus;desc="DYNAMIC"
+1 < Server-Timing: cfEdge;dur=61,cfOrigin;dur=69
+1 < Report-To: {"group":"cf-nel","max_age":604800,"endpoints":[{"url":"https://a.nel.cloudflare.com/report/v4?s=6814SPeUlqAUxIX0wqf0k1bSAZjePrKWW9jVEBrJsGEDRhrg4BVDuPx2A%2FVodaF7G03pdj%2FvmlyypE9KKZQge1vGzLV8HTADaICzRIn%2FO9inHUI%3D"}]}
+1 < CF-RAY: 9cb1833bcc793d3c-BOM
+1 < alt-svc: h3=":443"; ma=86400
+{"id":"ff8081819782e69e019c40f10e582bb6","name":"Apple MacBook Pro 17","updatedAt":"2026-02-09T05:54:02.246+00:00","data":{"year":2024,"price":2049.99,"CPU model":"Intel Core i9","Hard disk size":"1 TB","color":"silver"}}
+
+12:34:26.801 [pool-1-thread-1] DEBUG com.intuit.karate - response time in milliseconds: 490
+1 < 200
+1 < Date: Mon, 09 Feb 2026 07:04:26 GMT
+1 < Content-Type: application/json
+1 < Transfer-Encoding: chunked
+1 < Connection: keep-alive
+1 < Server: cloudflare
+1 < Nel: {"report_to":"cf-nel","success_fraction":0.0,"max_age":604800}
+1 < Vary: Origin
+1 < Vary: Access-Control-Request-Method
+1 < Vary: Access-Control-Request-Headers
+1 < cf-cache-status: DYNAMIC
+1 < Server-Timing: cfCacheStatus;desc="DYNAMIC"
+1 < Server-Timing: cfEdge;dur=64,cfOrigin;dur=75
+1 < Report-To: {"group":"cf-nel","max_age":604800,"endpoints":[{"url":"https://a.nel.cloudflare.com/report/v4?s=AGF%2BsL%2FkrMilQ6mfAnqwk1r0iT3av%2BhUjliWjHaf0Sn5C6BTIgrG0bUN7nTajGYThvekg9cDcAO1pQMYW%2B64ImjXysjvA%2FPfXKdeY4lLDydOU%2F0%3D"}]}
+1 < CF-RAY: 9cb1833bcd2884d1-BOM
+1 < alt-svc: h3=":443"; ma=86400
+[{"id":"1","name":"Google Pixel 6 Pro","data":{"color":"Cloudy White","capacity":"128 GB"}},{"id":"2","name":"Apple iPhone 12 Mini, 256GB, Blue","data":null},{"id":"3","name":"Apple iPhone 12 Pro Max","data":{"color":"Cloudy White","capacity GB":512}},{"id":"4","name":"Apple iPhone 11, 64GB","data":{"price":389.99,"color":"Purple"}},{"id":"5","name":"Samsung Galaxy Z Fold2","data":{"price":689.99,"color":"Brown"}},{"id":"6","name":"Apple AirPods","data":{"generation":"3rd","price":120}},{"id":"7","name":"Apple MacBook Pro 16","data":{"year":2019,"price":1849.99,"CPU model":"Intel Core i9","Hard disk size":"1 TB"}},{"id":"8","name":"Apple Watch Series 8","data":{"Strap Colour":"Elderberry","Case Size":"41mm"}},{"id":"9","name":"Beats Studio3 Wireless","data":{"Color":"Red","Description":"High-performance wireless noise cancelling headphones"}},{"id":"10","name":"Apple iPad Mini 5th Gen","data":{"Capacity":"64 GB","Screen size":7.9}},{"id":"11","name":"Apple iPad Mini 5th Gen","data":{"Capacity":"254 GB","Screen size":7.9}},{"id":"12","name":"Apple iPad Air","data":{"Generation":"4th","Price":"419.99","Capacity":"64 GB"}},{"id":"13","name":"Apple iPad Air","data":{"Generation":"4th","Price":"519.99","Capacity":"256 GB"}}]
+
+12:34:26.804 [pool-1-thread-3] DEBUG com.intuit.karate - response time in milliseconds: 494
+1 < 200
+1 < Date: Mon, 09 Feb 2026 07:04:26 GMT
+1 < Content-Type: application/json
+1 < Transfer-Encoding: chunked
+1 < Connection: keep-alive
+1 < Server: cloudflare
+1 < Nel: {"report_to":"cf-nel","success_fraction":0.0,"max_age":604800}
+1 < Vary: Origin
+1 < Vary: Access-Control-Request-Method
+1 < Vary: Access-Control-Request-Headers
+1 < cf-cache-status: DYNAMIC
+1 < Server-Timing: cfCacheStatus;desc="DYNAMIC"
+1 < Server-Timing: cfEdge;dur=72,cfOrigin;dur=75
+1 < Report-To: {"group":"cf-nel","max_age":604800,"endpoints":[{"url":"https://a.nel.cloudflare.com/report/v4?s=GhTizRQOOuyZNKLJDPlFMRBzIGPmmJEp8H%2BNblQJ1%2FyKhFtEmf55tJH6c7yiSF6Rw0VMr5xWDatdIxKpg0TkYazCU8%2BpJ79Cp9LYYF5PXsu%2Buzs%3D"}]}
+1 < CF-RAY: 9cb1833bcd95b85f-BOM
+1 < alt-svc: h3=":443"; ma=86400
+{"id":"ff8081819782e69e019c413741c22c32","name":"Apple MacBook Pro 17","createdAt":"2026-02-09T07:04:26.306+00:00","data":{"year":2024,"price":1849.99,"CPU model":"Intel Core i9","Hard disk size":"1 TB"}}
+
+12:34:26.818 [pool-1-thread-4] INFO  com.intuit.karate - [print] {
+  "id": "ff8081819782e69e019c40f10e582bb6",
+  "name": "Apple MacBook Pro 17",
+  "updatedAt": "2026-02-09T05:54:02.246+00:00",
+  "data": {
+    "year": 2024,
+    "price": 2049.99,
+    "CPU model": "Intel Core i9",
+    "Hard disk size": "1 TB",
+    "color": "silver"
+  }
+}
+ 
+12:34:26.818 [pool-1-thread-3] INFO  com.intuit.karate - [print] {
+  "id": "ff8081819782e69e019c413741c22c32",
+  "name": "Apple MacBook Pro 17",
+  "createdAt": "2026-02-09T07:04:26.306+00:00",
+  "data": {
+    "year": 2024,
+    "price": 1849.99,
+    "CPU model": "Intel Core i9",
+    "Hard disk size": "1 TB"
+  }
+}
+ 
+12:34:27.603 [pool-2-thread-1] INFO  com.intuit.karate.Suite - <<pass>> feature 1 of 3 (2 remaining) classpath:com/api/karate/automation/requests/getRequest.feature
+12:34:27.689 [pool-2-thread-1] INFO  com.intuit.karate.Suite - <<pass>> feature 2 of 3 (1 remaining) classpath:com/api/karate/automation/requests/postRequest.feature
+12:34:27.807 [pool-2-thread-1] INFO  com.intuit.karate.Suite - <<pass>> feature 3 of 3 (0 remaining) classpath:com/api/karate/automation/requests/putRequest.feature
+12:40:37.566 [main] DEBUG com.intuit.karate.Suite - [config] classpath:karate-config.js
+12:40:38.985 [main] INFO  com.intuit.karate - karate.env system property was: null 
+12:40:39.570 [main] DEBUG com.intuit.karate - request:
+1 > PATCH https://api.restful-api.dev/objects/ff8081819782e69e019c40f10e582bb6
+1 > Content-Type: application/json; charset=UTF-8
+1 > Content-Length: 137
+1 > Host: api.restful-api.dev
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.12 (Java/17.0.10)
+1 > Accept-Encoding: gzip,deflate
+{"name":"Apple MacBook Pro 17","data":{"year":2024,"price":2049.99,"CPU model":"Intel Core i9","Hard disk size":"1 TB","color":"silver"}}
+
+12:40:40.003 [main] DEBUG com.intuit.karate - response time in milliseconds: 428
+1 < 200
+1 < Date: Mon, 09 Feb 2026 07:10:39 GMT
+1 < Content-Type: application/json
+1 < Transfer-Encoding: chunked
+1 < Connection: keep-alive
+1 < Server: cloudflare
+1 < Nel: {"report_to":"cf-nel","success_fraction":0.0,"max_age":604800}
+1 < Vary: Origin
+1 < Vary: Access-Control-Request-Method
+1 < Vary: Access-Control-Request-Headers
+1 < cf-cache-status: DYNAMIC
+1 < Server-Timing: cfCacheStatus;desc="DYNAMIC"
+1 < Server-Timing: cfEdge;dur=81,cfOrigin;dur=69
+1 < Report-To: {"group":"cf-nel","max_age":604800,"endpoints":[{"url":"https://a.nel.cloudflare.com/report/v4?s=2vMdnq7SbjKbgTTw0Ug2N6wfbWk6LkCEMCNpmpalvxaLJqCwsXaBRXpbzrrorAbcPuFTcnmr1nTxk0xgGLoKcnyB%2BHc3MTsBdDB8lzsKLpxjFJY%3D"}]}
+1 < CF-RAY: 9cb18c582cc98581-BOM
+1 < alt-svc: h3=":443"; ma=86400
+{"id":"ff8081819782e69e019c40f10e582bb6","name":"Apple MacBook Pro 17","updatedAt":"2026-02-09T05:54:02.246+00:00","data":{"year":2024,"price":2049.99,"CPU model":"Intel Core i9","Hard disk size":"1 TB","color":"silver"}}
+
+12:40:40.014 [main] INFO  com.intuit.karate - [print] {
+  "id": "ff8081819782e69e019c40f10e582bb6",
+  "name": "Apple MacBook Pro 17",
+  "updatedAt": "2026-02-09T05:54:02.246+00:00",
+  "data": {
+    "year": 2024,
+    "price": 2049.99,
+    "CPU model": "Intel Core i9",
+    "Hard disk size": "1 TB",
+    "color": "silver"
+  }
+}
+ 
+12:44:44.497 [main] DEBUG com.intuit.karate.Suite - [config] classpath:karate-config.js
+12:44:44.507 [main] INFO  com.intuit.karate.Suite - backed up existing 'target\karate-reports' dir to: target\karate-reports_1770621284502
+12:44:44.515 [main] DEBUG com.intuit.karate.Suite - waiting for 3 features to complete
+12:44:45.914 [pool-2-thread-1] INFO  com.intuit.karate - karate.env system property was: null 
+12:44:45.913 [pool-2-thread-4] INFO  com.intuit.karate - karate.env system property was: null 
+12:44:45.913 [pool-2-thread-3] INFO  com.intuit.karate - karate.env system property was: null 
+12:44:45.913 [pool-2-thread-2] INFO  com.intuit.karate - karate.env system property was: null 
+12:44:46.419 [pool-2-thread-1] DEBUG com.intuit.karate - request:
+1 > GET https://api.restful-api.dev/objects
+1 > Host: api.restful-api.dev
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.12 (Java/17.0.10)
+1 > Accept-Encoding: gzip,deflate
+
+
+12:44:46.419 [pool-2-thread-2] DEBUG com.intuit.karate - request:
+1 > GET https://api.restful-api.dev/objects
+1 > Host: api.restful-api.dev
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.12 (Java/17.0.10)
+1 > Accept-Encoding: gzip,deflate
+
+
+12:44:46.420 [pool-2-thread-3] DEBUG com.intuit.karate - request:
+1 > POST https://api.restful-api.dev/objects
+1 > Content-Type: application/json; charset=UTF-8
+1 > Content-Length: 120
+1 > Host: api.restful-api.dev
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.12 (Java/17.0.10)
+1 > Accept-Encoding: gzip,deflate
+{"name":"Apple MacBook Pro 17","data":{"year":2024,"price":1849.99,"CPU model":"Intel Core i9","Hard disk size":"1 TB"}}
+
+12:44:46.420 [pool-2-thread-4] DEBUG com.intuit.karate - request:
+1 > PATCH https://api.restful-api.dev/objects/ff8081819782e69e019c40f10e582bb6
+1 > Content-Type: application/json; charset=UTF-8
+1 > Content-Length: 137
+1 > Host: api.restful-api.dev
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.12 (Java/17.0.10)
+1 > Accept-Encoding: gzip,deflate
+{"name":"Apple MacBook Pro 17","data":{"year":2024,"price":2049.99,"CPU model":"Intel Core i9","Hard disk size":"1 TB","color":"silver"}}
+
+12:44:46.870 [pool-2-thread-2] DEBUG com.intuit.karate - response time in milliseconds: 448
+1 < 200
+1 < Date: Mon, 09 Feb 2026 07:14:46 GMT
+1 < Content-Type: application/json
+1 < Transfer-Encoding: chunked
+1 < Connection: keep-alive
+1 < Server: cloudflare
+1 < Nel: {"report_to":"cf-nel","success_fraction":0.0,"max_age":604800}
+1 < Vary: Origin
+1 < Vary: Access-Control-Request-Method
+1 < Vary: Access-Control-Request-Headers
+1 < cf-cache-status: DYNAMIC
+1 < Server-Timing: cfCacheStatus;desc="DYNAMIC"
+1 < Server-Timing: cfEdge;dur=62,cfOrigin;dur=67
+1 < Report-To: {"group":"cf-nel","max_age":604800,"endpoints":[{"url":"https://a.nel.cloudflare.com/report/v4?s=EOuvJEFfrhtZxPJfe%2FYi2ml2Z%2BTTBVkxjz8A5E0%2Fd1gNLVcr87aeejJ2KBFuzxgZVFGnQGQBZl0QNzgSdWKZRdVdi4lXrOvKYjnK37wge1fwtAM%3D"}]}
+1 < CF-RAY: 9cb1925f3c1cefc3-BOM
+1 < alt-svc: h3=":443"; ma=86400
+[{"id":"1","name":"Google Pixel 6 Pro","data":{"color":"Cloudy White","capacity":"128 GB"}},{"id":"2","name":"Apple iPhone 12 Mini, 256GB, Blue","data":null},{"id":"3","name":"Apple iPhone 12 Pro Max","data":{"color":"Cloudy White","capacity GB":512}},{"id":"4","name":"Apple iPhone 11, 64GB","data":{"price":389.99,"color":"Purple"}},{"id":"5","name":"Samsung Galaxy Z Fold2","data":{"price":689.99,"color":"Brown"}},{"id":"6","name":"Apple AirPods","data":{"generation":"3rd","price":120}},{"id":"7","name":"Apple MacBook Pro 16","data":{"year":2019,"price":1849.99,"CPU model":"Intel Core i9","Hard disk size":"1 TB"}},{"id":"8","name":"Apple Watch Series 8","data":{"Strap Colour":"Elderberry","Case Size":"41mm"}},{"id":"9","name":"Beats Studio3 Wireless","data":{"Color":"Red","Description":"High-performance wireless noise cancelling headphones"}},{"id":"10","name":"Apple iPad Mini 5th Gen","data":{"Capacity":"64 GB","Screen size":7.9}},{"id":"11","name":"Apple iPad Mini 5th Gen","data":{"Capacity":"254 GB","Screen size":7.9}},{"id":"12","name":"Apple iPad Air","data":{"Generation":"4th","Price":"419.99","Capacity":"64 GB"}},{"id":"13","name":"Apple iPad Air","data":{"Generation":"4th","Price":"519.99","Capacity":"256 GB"}}]
+
+12:44:46.870 [pool-2-thread-4] DEBUG com.intuit.karate - response time in milliseconds: 447
+1 < 200
+1 < Date: Mon, 09 Feb 2026 07:14:46 GMT
+1 < Content-Type: application/json
+1 < Transfer-Encoding: chunked
+1 < Connection: keep-alive
+1 < Server: cloudflare
+1 < Nel: {"report_to":"cf-nel","success_fraction":0.0,"max_age":604800}
+1 < Vary: Origin
+1 < Vary: Access-Control-Request-Method
+1 < Vary: Access-Control-Request-Headers
+1 < cf-cache-status: DYNAMIC
+1 < Server-Timing: cfCacheStatus;desc="DYNAMIC"
+1 < Server-Timing: cfEdge;dur=62,cfOrigin;dur=67
+1 < Report-To: {"group":"cf-nel","max_age":604800,"endpoints":[{"url":"https://a.nel.cloudflare.com/report/v4?s=Mq5%2Bl9bJS%2FKc4EDXp7S53l2kXaOOoRyTalcWJ86vCHCNIhh9S9U8%2BVwW9Kd%2Fcvy%2Bh8UdhNjoDa8fmynJCXXtIEmygxZxVY9oX75p1FqtcXkSBZ4%3D"}]}
+1 < CF-RAY: 9cb1925f28f4bd55-BOM
+1 < alt-svc: h3=":443"; ma=86400
+{"id":"ff8081819782e69e019c40f10e582bb6","name":"Apple MacBook Pro 17","updatedAt":"2026-02-09T05:54:02.246+00:00","data":{"year":2024,"price":2049.99,"CPU model":"Intel Core i9","Hard disk size":"1 TB","color":"silver"}}
+
+12:44:46.872 [pool-2-thread-4] INFO  com.intuit.karate - [print] {
+  "id": "ff8081819782e69e019c40f10e582bb6",
+  "name": "Apple MacBook Pro 17",
+  "updatedAt": "2026-02-09T05:54:02.246+00:00",
+  "data": {
+    "year": 2024,
+    "price": 2049.99,
+    "CPU model": "Intel Core i9",
+    "Hard disk size": "1 TB",
+    "color": "silver"
+  }
+}
+ 
+12:44:46.892 [pool-2-thread-1] DEBUG com.intuit.karate - response time in milliseconds: 469
+1 < 200
+1 < Date: Mon, 09 Feb 2026 07:14:46 GMT
+1 < Content-Type: application/json
+1 < Transfer-Encoding: chunked
+1 < Connection: keep-alive
+1 < Server: cloudflare
+1 < Nel: {"report_to":"cf-nel","success_fraction":0.0,"max_age":604800}
+1 < Vary: Origin
+1 < Vary: Access-Control-Request-Method
+1 < Vary: Access-Control-Request-Headers
+1 < cf-cache-status: DYNAMIC
+1 < Server-Timing: cfCacheStatus;desc="DYNAMIC"
+1 < Server-Timing: cfEdge;dur=83,cfOrigin;dur=80
+1 < Report-To: {"group":"cf-nel","max_age":604800,"endpoints":[{"url":"https://a.nel.cloudflare.com/report/v4?s=d1D6RPKYal19ezj%2BwbjOHYt5grnbU%2F5XIL6kaygXzikkw8okAwKNNtBeHzP8UE2g%2BskDohBklijvc4YYxD6OFAxA8c1xxme%2FCGKvmD9Wk%2BhZy7w%3D"}]}
+1 < CF-RAY: 9cb1925f391112a9-BOM
+1 < alt-svc: h3=":443"; ma=86400
+[{"id":"1","name":"Google Pixel 6 Pro","data":{"color":"Cloudy White","capacity":"128 GB"}},{"id":"2","name":"Apple iPhone 12 Mini, 256GB, Blue","data":null},{"id":"3","name":"Apple iPhone 12 Pro Max","data":{"color":"Cloudy White","capacity GB":512}},{"id":"4","name":"Apple iPhone 11, 64GB","data":{"price":389.99,"color":"Purple"}},{"id":"5","name":"Samsung Galaxy Z Fold2","data":{"price":689.99,"color":"Brown"}},{"id":"6","name":"Apple AirPods","data":{"generation":"3rd","price":120}},{"id":"7","name":"Apple MacBook Pro 16","data":{"year":2019,"price":1849.99,"CPU model":"Intel Core i9","Hard disk size":"1 TB"}},{"id":"8","name":"Apple Watch Series 8","data":{"Strap Colour":"Elderberry","Case Size":"41mm"}},{"id":"9","name":"Beats Studio3 Wireless","data":{"Color":"Red","Description":"High-performance wireless noise cancelling headphones"}},{"id":"10","name":"Apple iPad Mini 5th Gen","data":{"Capacity":"64 GB","Screen size":7.9}},{"id":"11","name":"Apple iPad Mini 5th Gen","data":{"Capacity":"254 GB","Screen size":7.9}},{"id":"12","name":"Apple iPad Air","data":{"Generation":"4th","Price":"419.99","Capacity":"64 GB"}},{"id":"13","name":"Apple iPad Air","data":{"Generation":"4th","Price":"519.99","Capacity":"256 GB"}}]
+
+12:44:46.900 [pool-2-thread-3] DEBUG com.intuit.karate - response time in milliseconds: 480
+1 < 200
+1 < Date: Mon, 09 Feb 2026 07:14:46 GMT
+1 < Content-Type: application/json
+1 < Transfer-Encoding: chunked
+1 < Connection: keep-alive
+1 < Server: cloudflare
+1 < Nel: {"report_to":"cf-nel","success_fraction":0.0,"max_age":604800}
+1 < Vary: Origin
+1 < Vary: Access-Control-Request-Method
+1 < Vary: Access-Control-Request-Headers
+1 < cf-cache-status: DYNAMIC
+1 < Server-Timing: cfCacheStatus;desc="DYNAMIC"
+1 < Server-Timing: cfEdge;dur=79,cfOrigin;dur=91
+1 < Report-To: {"group":"cf-nel","max_age":604800,"endpoints":[{"url":"https://a.nel.cloudflare.com/report/v4?s=ycD2NaQBRaULPnFWdWfMyUsBVvnKQ3a1XF9%2FUzXbr6hgvot4adwZbqPhTynVOVKgEpHq4nzLktsHRBIBAGijQNdqrGK0GRSTD%2BubQ9W6bz0n9l4%3D"}]}
+1 < CF-RAY: 9cb1925f2baf8375-BOM
+1 < alt-svc: h3=":443"; ma=86400
+{"id":"ff8081819782e69e019c4140b7fa2c4f","name":"Apple MacBook Pro 17","createdAt":"2026-02-09T07:14:46.394+00:00","data":{"year":2024,"price":1849.99,"CPU model":"Intel Core i9","Hard disk size":"1 TB"}}
+
+12:44:46.903 [pool-2-thread-3] INFO  com.intuit.karate - [print] {
+  "id": "ff8081819782e69e019c4140b7fa2c4f",
+  "name": "Apple MacBook Pro 17",
+  "createdAt": "2026-02-09T07:14:46.394+00:00",
+  "data": {
+    "year": 2024,
+    "price": 1849.99,
+    "CPU model": "Intel Core i9",
+    "Hard disk size": "1 TB"
+  }
+}
+ 
+12:44:47.690 [pool-3-thread-1] INFO  com.intuit.karate.Suite - <<pass>> feature 1 of 3 (2 remaining) classpath:com/api/karate/automation/requests/getRequest.feature
+12:44:47.779 [pool-3-thread-1] INFO  com.intuit.karate.Suite - <<pass>> feature 2 of 3 (1 remaining) classpath:com/api/karate/automation/requests/postRequest.feature
+12:44:47.862 [pool-3-thread-1] INFO  com.intuit.karate.Suite - <<pass>> feature 3 of 3 (0 remaining) classpath:com/api/karate/automation/requests/putRequest.feature
+12:44:48.104 [main] DEBUG com.intuit.karate.Suite - [config] classpath:karate-config.js
+12:44:48.143 [main] INFO  com.intuit.karate - karate.env system property was: null 
+12:44:48.150 [main] DEBUG com.intuit.karate - request:
+1 > PATCH https://api.restful-api.dev/objects/ff8081819782e69e019c40f10e582bb6
+1 > Content-Type: application/json; charset=UTF-8
+1 > Content-Length: 137
+1 > Host: api.restful-api.dev
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.12 (Java/17.0.10)
+1 > Accept-Encoding: gzip,deflate
+{"name":"Apple MacBook Pro 17","data":{"year":2024,"price":2049.99,"CPU model":"Intel Core i9","Hard disk size":"1 TB","color":"silver"}}
+
+12:44:48.363 [main] DEBUG com.intuit.karate - response time in milliseconds: 213
+1 < 200
+1 < Date: Mon, 09 Feb 2026 07:14:47 GMT
+1 < Content-Type: application/json
+1 < Transfer-Encoding: chunked
+1 < Connection: keep-alive
+1 < Server: cloudflare
+1 < Nel: {"report_to":"cf-nel","success_fraction":0.0,"max_age":604800}
+1 < Vary: Origin
+1 < Vary: Access-Control-Request-Method
+1 < Vary: Access-Control-Request-Headers
+1 < cf-cache-status: DYNAMIC
+1 < Server-Timing: cfCacheStatus;desc="DYNAMIC"
+1 < Server-Timing: cfEdge;dur=59,cfOrigin;dur=78
+1 < Report-To: {"group":"cf-nel","max_age":604800,"endpoints":[{"url":"https://a.nel.cloudflare.com/report/v4?s=1qXE0GwHML2t6nznNJANeDwuOb9GSfNQRPKBEr26pfDO2AGpqeOCnalQrJPLkUaSPMb%2BusIW6c8qcEwV9w7%2Bux20R%2BdjlD9djljEm%2F9FOtdihQE%3D"}]}
+1 < CF-RAY: 9cb192687f653b10-BOM
+1 < alt-svc: h3=":443"; ma=86400
+{"id":"ff8081819782e69e019c40f10e582bb6","name":"Apple MacBook Pro 17","updatedAt":"2026-02-09T05:54:02.246+00:00","data":{"year":2024,"price":2049.99,"CPU model":"Intel Core i9","Hard disk size":"1 TB","color":"silver"}}
+
+12:44:48.365 [main] INFO  com.intuit.karate - [print] {
+  "id": "ff8081819782e69e019c40f10e582bb6",
+  "name": "Apple MacBook Pro 17",
+  "updatedAt": "2026-02-09T05:54:02.246+00:00",
+  "data": {
+    "year": 2024,
+    "price": 2049.99,
+    "CPU model": "Intel Core i9",
+    "Hard disk size": "1 TB",
+    "color": "silver"
+  }
+}
+ 

@@ -49,13 +49,13 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
     <div>Scenarios</div>
   </div>
   <div id="nav-date">
-    <div>2026-02-08 02:53:13 pm</div>
+    <div>2026-02-09 12:44:47 pm</div>
   </div>
 </div>
 
         <div class="nav-container">
           <div class="nav-item passed">
-            <a href="#[1:3]"><span>[1:3]</span> <span>Get the list of all objects</span></a>
+            <a href="#[1:6]"><span>[1:6]</span> <span>Post the list of all objects</span></a>
           </div>
         </div>
       </div>
@@ -69,30 +69,36 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
           <span class="feature-description"></span>
         </div>
         <div class="scenario">
-          <div class="scenario-heading" id="[1:3]">
+          <div class="scenario-heading" id="[1:6]">
             <div class="heading-container">
               <div class="scenario-tags">
                 
               </div>
               <div class="scenario-keyword">
-                Scenario: <span>[1:3]</span>
-                <span class="scenario-name">Get the list of all objects</span>
+                Scenario: <span>[1:6]</span>
+                <span class="scenario-name">Post the list of all objects</span>
                 <span></span>
               </div>
             </div>
             <div class="scenario-time passed">
-              <span>ms:</span>&nbsp;<span>1296</span>
+              <span>ms:</span>&nbsp;<span>925</span>
             </div>
           </div>
-          
-          <div><div>
+          <div class="step-row">
+            <div class="step-container" id="[1:6]bg">
+              <div class="step-ref bg-step">&gt;&gt;</div>
+              <div class="step-cell passed">Background:</div>
+            </div>
+            <div class="time-cell passed"></div>
+          </div>
+          <div data-parent="[1:6]bg"><div>
   
 
   
 
   <div class="step-row">
     <div class="step-container" id="0.4">
-      <div class="step-ref passed">4</div>
+      <div class="step-ref bg-step">4</div>
       
       <div class="step-cell passed">
         <span>Given</span>&nbsp;<span>url &#39;https://api.restful-api.dev&#39;</span>
@@ -107,7 +113,7 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
 
   
 
-  <div class="preformatted" data-parent="0.4">14:53:12.505 karate.env system property was: null 
+  <div class="preformatted" data-parent="0.4">12:44:45.917 karate.env system property was: null 
 </div>   
 
   
@@ -120,8 +126,8 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
   
 
   <div class="step-row">
-    <div class="step-container" id="0.5">
-      <div class="step-ref passed">5</div>
+    <div class="step-container" id="0.7">
+      <div class="step-ref passed">7</div>
       
       <div class="step-cell passed">
         <span>And</span>&nbsp;<span>path  &#39;objects&#39;</span>
@@ -148,21 +154,21 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
   
 
   <div class="step-row">
-    <div class="step-container" id="0.6">
-      <div class="step-ref passed">6</div>
+    <div class="step-container" id="0.8">
+      <div class="step-ref passed">8</div>
       
       <div class="step-cell passed">
         <span>And</span>&nbsp;<span>request</span>
       </div>
     </div>
-    <div class="time-cell passed">81</div>
+    <div class="time-cell passed">131</div>
   </div>
 
    
   
-  <div class="preformatted" data-parent="0.6">{ &quot;name&quot;: &quot;Apple MacBook Pro 16&quot;,
-   &quot;data&quot;: {
-      &quot;year&quot;: 2019,
+  <div class="preformatted" data-parent="0.8">{ &quot;name&quot;: &quot;Apple MacBook Pro 17&quot;,
+    &quot;data&quot;: {
+      &quot;year&quot;: 2024,
       &quot;price&quot;: 1849.99,
       &quot;CPU model&quot;: &quot;Intel Core i9&quot;,
       &quot;Hard disk size&quot;: &quot;1 TB&quot;
@@ -183,14 +189,14 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
   
 
   <div class="step-row">
-    <div class="step-container" id="0.15">
-      <div class="step-ref passed">15</div>
+    <div class="step-container" id="0.17">
+      <div class="step-ref passed">17</div>
       
       <div class="step-cell passed">
-        <span>When</span>&nbsp;<span>method get</span>
+        <span>When</span>&nbsp;<span>method post</span>
       </div>
     </div>
-    <div class="time-cell passed">1201</div>
+    <div class="time-cell passed">788</div>
   </div>
 
    
@@ -199,19 +205,19 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
 
   
 
-  <div class="preformatted" data-parent="0.15">14:53:13.272 request:
-1 &gt; GET https://api.restful-api.dev/objects
+  <div class="preformatted" data-parent="0.17">12:44:46.420 request:
+1 &gt; POST https://api.restful-api.dev/objects
 1 &gt; Content-Type: application/json; charset=UTF-8
 1 &gt; Content-Length: 120
 1 &gt; Host: api.restful-api.dev
 1 &gt; Connection: Keep-Alive
 1 &gt; User-Agent: Apache-HttpClient/4.5.12 (Java/17.0.10)
 1 &gt; Accept-Encoding: gzip,deflate
-{&quot;name&quot;:&quot;Apple MacBook Pro 16&quot;,&quot;data&quot;:{&quot;year&quot;:2019,&quot;price&quot;:1849.99,&quot;CPU model&quot;:&quot;Intel Core i9&quot;,&quot;Hard disk size&quot;:&quot;1 TB&quot;}}
+{&quot;name&quot;:&quot;Apple MacBook Pro 17&quot;,&quot;data&quot;:{&quot;year&quot;:2024,&quot;price&quot;:1849.99,&quot;CPU model&quot;:&quot;Intel Core i9&quot;,&quot;Hard disk size&quot;:&quot;1 TB&quot;}}
 
-14:53:13.844 response time in milliseconds: 565
+12:44:46.900 response time in milliseconds: 480
 1 &lt; 200
-1 &lt; Date: Sun, 08 Feb 2026 09:23:12 GMT
+1 &lt; Date: Mon, 09 Feb 2026 07:14:46 GMT
 1 &lt; Content-Type: application/json
 1 &lt; Transfer-Encoding: chunked
 1 &lt; Connection: keep-alive
@@ -222,11 +228,11 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
 1 &lt; Vary: Access-Control-Request-Headers
 1 &lt; cf-cache-status: DYNAMIC
 1 &lt; Server-Timing: cfCacheStatus;desc=&quot;DYNAMIC&quot;
-1 &lt; Server-Timing: cfEdge;dur=66,cfOrigin;dur=75
-1 &lt; Report-To: {&quot;group&quot;:&quot;cf-nel&quot;,&quot;max_age&quot;:604800,&quot;endpoints&quot;:[{&quot;url&quot;:&quot;https://a.nel.cloudflare.com/report/v4?s=MuPuuc8XW7wZ6cKKxsTfodlOOSmqBOCXdcIK%2FGR0qJ54zqG62kYhXbyBSQdGioW7JNEO1LvNIpQARbx8Jlza3cJ4Xrhu7TBeGHLZUMHYUZ2F5DQ%3D&quot;}]}
-1 &lt; CF-RAY: 9caa11237da6892d-BOM
+1 &lt; Server-Timing: cfEdge;dur=79,cfOrigin;dur=91
+1 &lt; Report-To: {&quot;group&quot;:&quot;cf-nel&quot;,&quot;max_age&quot;:604800,&quot;endpoints&quot;:[{&quot;url&quot;:&quot;https://a.nel.cloudflare.com/report/v4?s=ycD2NaQBRaULPnFWdWfMyUsBVvnKQ3a1XF9%2FUzXbr6hgvot4adwZbqPhTynVOVKgEpHq4nzLktsHRBIBAGijQNdqrGK0GRSTD%2BubQ9W6bz0n9l4%3D&quot;}]}
+1 &lt; CF-RAY: 9cb1925f2baf8375-BOM
 1 &lt; alt-svc: h3=&quot;:443&quot;; ma=86400
-[{&quot;id&quot;:&quot;1&quot;,&quot;name&quot;:&quot;Google Pixel 6 Pro&quot;,&quot;data&quot;:{&quot;color&quot;:&quot;Cloudy White&quot;,&quot;capacity&quot;:&quot;128 GB&quot;}},{&quot;id&quot;:&quot;2&quot;,&quot;name&quot;:&quot;Apple iPhone 12 Mini, 256GB, Blue&quot;,&quot;data&quot;:null},{&quot;id&quot;:&quot;3&quot;,&quot;name&quot;:&quot;Apple iPhone 12 Pro Max&quot;,&quot;data&quot;:{&quot;color&quot;:&quot;Cloudy White&quot;,&quot;capacity GB&quot;:512}},{&quot;id&quot;:&quot;4&quot;,&quot;name&quot;:&quot;Apple iPhone 11, 64GB&quot;,&quot;data&quot;:{&quot;price&quot;:389.99,&quot;color&quot;:&quot;Purple&quot;}},{&quot;id&quot;:&quot;5&quot;,&quot;name&quot;:&quot;Samsung Galaxy Z Fold2&quot;,&quot;data&quot;:{&quot;price&quot;:689.99,&quot;color&quot;:&quot;Brown&quot;}},{&quot;id&quot;:&quot;6&quot;,&quot;name&quot;:&quot;Apple AirPods&quot;,&quot;data&quot;:{&quot;generation&quot;:&quot;3rd&quot;,&quot;price&quot;:120}},{&quot;id&quot;:&quot;7&quot;,&quot;name&quot;:&quot;Apple MacBook Pro 16&quot;,&quot;data&quot;:{&quot;year&quot;:2019,&quot;price&quot;:1849.99,&quot;CPU model&quot;:&quot;Intel Core i9&quot;,&quot;Hard disk size&quot;:&quot;1 TB&quot;}},{&quot;id&quot;:&quot;8&quot;,&quot;name&quot;:&quot;Apple Watch Series 8&quot;,&quot;data&quot;:{&quot;Strap Colour&quot;:&quot;Elderberry&quot;,&quot;Case Size&quot;:&quot;41mm&quot;}},{&quot;id&quot;:&quot;9&quot;,&quot;name&quot;:&quot;Beats Studio3 Wireless&quot;,&quot;data&quot;:{&quot;Color&quot;:&quot;Red&quot;,&quot;Description&quot;:&quot;High-performance wireless noise cancelling headphones&quot;}},{&quot;id&quot;:&quot;10&quot;,&quot;name&quot;:&quot;Apple iPad Mini 5th Gen&quot;,&quot;data&quot;:{&quot;Capacity&quot;:&quot;64 GB&quot;,&quot;Screen size&quot;:7.9}},{&quot;id&quot;:&quot;11&quot;,&quot;name&quot;:&quot;Apple iPad Mini 5th Gen&quot;,&quot;data&quot;:{&quot;Capacity&quot;:&quot;254 GB&quot;,&quot;Screen size&quot;:7.9}},{&quot;id&quot;:&quot;12&quot;,&quot;name&quot;:&quot;Apple iPad Air&quot;,&quot;data&quot;:{&quot;Generation&quot;:&quot;4th&quot;,&quot;Price&quot;:&quot;419.99&quot;,&quot;Capacity&quot;:&quot;64 GB&quot;}},{&quot;id&quot;:&quot;13&quot;,&quot;name&quot;:&quot;Apple iPad Air&quot;,&quot;data&quot;:{&quot;Generation&quot;:&quot;4th&quot;,&quot;Price&quot;:&quot;519.99&quot;,&quot;Capacity&quot;:&quot;256 GB&quot;}}]
+{&quot;id&quot;:&quot;ff8081819782e69e019c4140b7fa2c4f&quot;,&quot;name&quot;:&quot;Apple MacBook Pro 17&quot;,&quot;createdAt&quot;:&quot;2026-02-09T07:14:46.394+00:00&quot;,&quot;data&quot;:{&quot;year&quot;:2024,&quot;price&quot;:1849.99,&quot;CPU model&quot;:&quot;Intel Core i9&quot;,&quot;Hard disk size&quot;:&quot;1 TB&quot;}}
 
 </div>   
 
@@ -240,8 +246,8 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
   
 
   <div class="step-row">
-    <div class="step-container" id="0.16">
-      <div class="step-ref passed">16</div>
+    <div class="step-container" id="0.18">
+      <div class="step-ref passed">18</div>
       
       <div class="step-cell passed">
         <span>Then</span>&nbsp;<span>status 200</span>
@@ -268,14 +274,14 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
   
 
   <div class="step-row">
-    <div class="step-container" id="0.17">
-      <div class="step-ref passed">17</div>
+    <div class="step-container" id="0.19">
+      <div class="step-ref passed">19</div>
       
       <div class="step-cell passed">
         <span>And</span>&nbsp;<span>print response</span>
       </div>
     </div>
-    <div class="time-cell passed">12</div>
+    <div class="time-cell passed">3</div>
   </div>
 
    
@@ -284,113 +290,17 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
 
   
 
-  <div class="preformatted" data-parent="0.17">14:53:13.865 [print] [
-  {
-    &quot;id&quot;: &quot;1&quot;,
-    &quot;name&quot;: &quot;Google Pixel 6 Pro&quot;,
-    &quot;data&quot;: {
-      &quot;color&quot;: &quot;Cloudy White&quot;,
-      &quot;capacity&quot;: &quot;128 GB&quot;
-    }
-  },
-  {
-    &quot;id&quot;: &quot;2&quot;,
-    &quot;name&quot;: &quot;Apple iPhone 12 Mini, 256GB, Blue&quot;,
-    &quot;data&quot;: null
-  },
-  {
-    &quot;id&quot;: &quot;3&quot;,
-    &quot;name&quot;: &quot;Apple iPhone 12 Pro Max&quot;,
-    &quot;data&quot;: {
-      &quot;color&quot;: &quot;Cloudy White&quot;,
-      &quot;capacity GB&quot;: 512
-    }
-  },
-  {
-    &quot;id&quot;: &quot;4&quot;,
-    &quot;name&quot;: &quot;Apple iPhone 11, 64GB&quot;,
-    &quot;data&quot;: {
-      &quot;price&quot;: 389.99,
-      &quot;color&quot;: &quot;Purple&quot;
-    }
-  },
-  {
-    &quot;id&quot;: &quot;5&quot;,
-    &quot;name&quot;: &quot;Samsung Galaxy Z Fold2&quot;,
-    &quot;data&quot;: {
-      &quot;price&quot;: 689.99,
-      &quot;color&quot;: &quot;Brown&quot;
-    }
-  },
-  {
-    &quot;id&quot;: &quot;6&quot;,
-    &quot;name&quot;: &quot;Apple AirPods&quot;,
-    &quot;data&quot;: {
-      &quot;generation&quot;: &quot;3rd&quot;,
-      &quot;price&quot;: 120
-    }
-  },
-  {
-    &quot;id&quot;: &quot;7&quot;,
-    &quot;name&quot;: &quot;Apple MacBook Pro 16&quot;,
-    &quot;data&quot;: {
-      &quot;year&quot;: 2019,
-      &quot;price&quot;: 1849.99,
-      &quot;CPU model&quot;: &quot;Intel Core i9&quot;,
-      &quot;Hard disk size&quot;: &quot;1 TB&quot;
-    }
-  },
-  {
-    &quot;id&quot;: &quot;8&quot;,
-    &quot;name&quot;: &quot;Apple Watch Series 8&quot;,
-    &quot;data&quot;: {
-      &quot;Strap Colour&quot;: &quot;Elderberry&quot;,
-      &quot;Case Size&quot;: &quot;41mm&quot;
-    }
-  },
-  {
-    &quot;id&quot;: &quot;9&quot;,
-    &quot;name&quot;: &quot;Beats Studio3 Wireless&quot;,
-    &quot;data&quot;: {
-      &quot;Color&quot;: &quot;Red&quot;,
-      &quot;Description&quot;: &quot;High-performance wireless noise cancelling headphones&quot;
-    }
-  },
-  {
-    &quot;id&quot;: &quot;10&quot;,
-    &quot;name&quot;: &quot;Apple iPad Mini 5th Gen&quot;,
-    &quot;data&quot;: {
-      &quot;Capacity&quot;: &quot;64 GB&quot;,
-      &quot;Screen size&quot;: 7.9
-    }
-  },
-  {
-    &quot;id&quot;: &quot;11&quot;,
-    &quot;name&quot;: &quot;Apple iPad Mini 5th Gen&quot;,
-    &quot;data&quot;: {
-      &quot;Capacity&quot;: &quot;254 GB&quot;,
-      &quot;Screen size&quot;: 7.9
-    }
-  },
-  {
-    &quot;id&quot;: &quot;12&quot;,
-    &quot;name&quot;: &quot;Apple iPad Air&quot;,
-    &quot;data&quot;: {
-      &quot;Generation&quot;: &quot;4th&quot;,
-      &quot;Price&quot;: &quot;419.99&quot;,
-      &quot;Capacity&quot;: &quot;64 GB&quot;
-    }
-  },
-  {
-    &quot;id&quot;: &quot;13&quot;,
-    &quot;name&quot;: &quot;Apple iPad Air&quot;,
-    &quot;data&quot;: {
-      &quot;Generation&quot;: &quot;4th&quot;,
-      &quot;Price&quot;: &quot;519.99&quot;,
-      &quot;Capacity&quot;: &quot;256 GB&quot;
-    }
+  <div class="preformatted" data-parent="0.19">12:44:46.903 [print] {
+  &quot;id&quot;: &quot;ff8081819782e69e019c4140b7fa2c4f&quot;,
+  &quot;name&quot;: &quot;Apple MacBook Pro 17&quot;,
+  &quot;createdAt&quot;: &quot;2026-02-09T07:14:46.394+00:00&quot;,
+  &quot;data&quot;: {
+    &quot;year&quot;: 2024,
+    &quot;price&quot;: 1849.99,
+    &quot;CPU model&quot;: &quot;Intel Core i9&quot;,
+    &quot;Hard disk size&quot;: &quot;1 TB&quot;
   }
-]
+}
  
 </div>   
 
