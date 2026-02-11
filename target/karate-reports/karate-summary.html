@@ -19,36 +19,34 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
   capture_pageview:false,
   api_transport:'sendBeacon',
   loaded: function(posthog) { 
-    posthog.capture("report_summary",{distinct_id:"98e15306-98e4-41fa-9eb4-f5d8c662819e",karate_version:"1.4.1",karate_meta:null});
+    posthog.identify("98e15306-98e4-41fa-9eb4-f5d8c662819e",{name:"ksaro"});
+    posthog.capture("report_summary",{karate_version:"1.2.0",karate_meta:null});
   }
 });
 </script>
 
-    <title>Karate Summary Report</title>
+    <title>Karate Summary Report</title>  
   </head>
-  <body>
+  <body>   
     <div id="root-container">
       <div id="leftnav">
-        
+                
         <div>
   <div class="nav-logo">
     <a href="https://karatelabs.io">
       <img src="karate-labs-logo-ring.svg" alt="Karate Labs"/>
     </a>
     <div class="nav-count">
-      <div id="nav-pass" class="bg-success">1</div>
-      <div id="nav-fail" class="bg-danger">0</div>
+      <div id="nav-pass" class="bg-success">3</div>
+      <div id="nav-fail" class="bg-danger">2</div>
     </div>
-  </div>
-  <div id="nav-env">
-    <div></div>
   </div>
   <div id="nav-type">
     <div>Features</div>
-  </div>
+  </div>         
   <div id="nav-date">
-    <div>2026-02-09 12:44:48 pm</div>
-  </div>
+    <div>2026-02-10 06:48:52 pm</div>
+  </div>        
 </div>
 
       </div>
@@ -56,7 +54,7 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
         <div class="page-heading alert alert-primary">
           <a href="karate-tags.html">Tags</a><span class="feature-label">|</span>
           <a href="karate-timeline.html">Timeline</a>
-        </div>
+        </div>       
         <table class="features-table table table-sm">
           <thead>
             <tr>
@@ -69,7 +67,7 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
             </tr>
           </thead>
           <tbody>
-            <tr class="passed">
+            <tr class="passed">              
               <td>
                 <a href="com.api.karate.automation.requests.putRequest.html">com/api/karate/automation/requests/putRequest.feature</a>
               </td>
@@ -77,8 +75,48 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
               <td class="num">1</td>
               <td class="num">0</td>
               <td class="num">1</td>
-              <td class="num">221</td>
+              <td class="num">342</td>            
             </tr>
+            <tr class="failed">              
+              <td>
+                <a href="com.api.karate.automation.requests.getRequest.html">com/api/karate/automation/requests/getRequest.feature</a>
+              </td>
+              <td>Get request list of all objects</td>
+              <td class="num">2</td>
+              <td class="num">1</td>
+              <td class="num">3</td>
+              <td class="num">2305</td>            
+            </tr>
+            <tr class="failed">              
+              <td>
+                <a href="com.api.karate.automation.requests.dataDriven.html">com/api/karate/automation/requests/dataDriven.feature</a>
+              </td>
+              <td>Test a data driven use case using a csv file</td>
+              <td class="num">0</td>
+              <td class="num">5</td>
+              <td class="num">5</td>
+              <td class="num">3990</td>            
+            </tr>
+            <tr class="passed">              
+              <td>
+                <a href="com.api.karate.automation.requests.postRequest.html">com/api/karate/automation/requests/postRequest.feature</a>
+              </td>
+              <td>Post request list of all objects</td>
+              <td class="num">1</td>
+              <td class="num">0</td>
+              <td class="num">1</td>
+              <td class="num">730</td>            
+            </tr>
+            <tr class="passed">              
+              <td>
+                <a href="com.api.karate.automation.requests.BearerToken.html">com/api/karate/automation/requests/BearerToken.feature</a>
+              </td>
+              <td>Post request along with bearer token</td>
+              <td class="num">1</td>
+              <td class="num">0</td>
+              <td class="num">1</td>
+              <td class="num">949</td>            
+            </tr>            
           </tbody>
         </table>
       </div>

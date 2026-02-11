@@ -8,10 +8,8 @@
     <link rel="shortcut icon" href="favicon.ico"/>
     <script type="text/javascript" src="res/jquery.min.js"></script>
     <script type="text/javascript" src="res/jquery.tablesorter.min.js"></script>
-    <script type="text/javascript" src="res/jquery-ui.min.js"></script>
     <script type="text/javascript" src="res/bootstrap.min.js"></script>
     <script type="text/javascript" src="res/karate-report.js"></script>
-    <script type="text/javascript" src="res/Resemble.js"></script>
     <script>
 !function(t,e){var o,n,p,r;e.__SV||(window.posthog=e,e._i=[],e.init=function(i,s,a){function g(t,e){var o=e.split(".");2==o.length&&(t=t[o[0]],e=o[1]),t[e]=function(){t.push([e].concat(Array.prototype.slice.call(arguments,0)))}}(p=t.createElement("script")).type="text/javascript",p.async=!0,p.src=s.api_host+"/static/array.js",(r=t.getElementsByTagName("script")[0]).parentNode.insertBefore(p,r);var u=e;for(void 0!==a?u=e[a]=[]:a="posthog",u.people=u.people||[],u.toString=function(t){var e="posthog";return"posthog"!==a&&(e+="."+a),t||(e+=" (stub)"),e},u.people.toString=function(){return u.toString(1)+".people (stub)"},o="capture identify alias people.set people.set_once set_config register register_once unregister opt_out_capturing has_opted_out_capturing opt_in_capturing reset isFeatureEnabled onFeatureFlags".split(" "),n=0;n<o.length;n++)g(u,o[n]);e._i.push([i,s,a])},e.__SV=1)}(document,window.posthog||[]);
 posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
@@ -21,17 +19,18 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
   capture_pageview:false,
   api_transport:'sendBeacon',
   loaded: function(posthog) { 
-    posthog.capture("report_feature",{distinct_id:"98e15306-98e4-41fa-9eb4-f5d8c662819e",karate_version:"1.4.1",karate_meta:null});
+    posthog.identify("98e15306-98e4-41fa-9eb4-f5d8c662819e",{name:"ksaro"});
+    posthog.capture("report_feature",{karate_version:"1.2.0",karate_meta:null});
   }
 });
 </script>
-
-    <title>com.api.karate.automation.requests.putRequest</title>
+  
+    <title>com.api.karate.automation.requests.putRequest</title>  
   </head>
-  <body>
+  <body>   
     <div id="root-container">
       <div id="leftnav">
-        
+                
         <div>
   <div class="nav-logo">
     <a href="https://karatelabs.io">
@@ -42,15 +41,12 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
       <div id="nav-fail" class="bg-danger">0</div>
     </div>
   </div>
-  <div id="nav-env">
-    <div></div>
-  </div>
   <div id="nav-type">
     <div>Scenarios</div>
-  </div>
+  </div>         
   <div id="nav-date">
-    <div>2026-02-09 12:44:48 pm</div>
-  </div>
+    <div>2026-02-10 06:48:47 pm</div>
+  </div>        
 </div>
 
         <div class="nav-container">
@@ -81,7 +77,7 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
               </div>
             </div>
             <div class="scenario-time passed">
-              <span>ms:</span>&nbsp;<span>221</span>
+              <span>ms:</span>&nbsp;<span>342</span>
             </div>
           </div>
           <div class="step-row">
@@ -104,7 +100,7 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
         <span>Given</span>&nbsp;<span>url &#39;https://api.restful-api.dev&#39;</span>
       </div>
     </div>
-    <div class="time-cell passed">1</div>
+    <div class="time-cell passed">0</div>
   </div>
 
    
@@ -113,7 +109,7 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
 
   
 
-  <div class="preformatted" data-parent="0.4">12:44:48.144 karate.env system property was: null 
+  <div class="preformatted" data-parent="0.4">18:48:46.428 karate.env system property was: null 
 </div>   
 
   
@@ -133,7 +129,7 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
         <span>And</span>&nbsp;<span>path  &#39;objects/ff8081819782e69e019c40f10e582bb6&#39;</span>
       </div>
     </div>
-    <div class="time-cell passed">0</div>
+    <div class="time-cell passed">1</div>
   </div>
 
    
@@ -198,7 +194,7 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
         <span>When</span>&nbsp;<span>method patch</span>
       </div>
     </div>
-    <div class="time-cell passed">217</div>
+    <div class="time-cell passed">326</div>
   </div>
 
    
@@ -207,7 +203,7 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
 
   
 
-  <div class="preformatted" data-parent="0.19">12:44:48.150 request:
+  <div class="preformatted" data-parent="0.19">18:48:46.433 request:
 1 &gt; PATCH https://api.restful-api.dev/objects/ff8081819782e69e019c40f10e582bb6
 1 &gt; Content-Type: application/json; charset=UTF-8
 1 &gt; Content-Length: 137
@@ -217,9 +213,9 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
 1 &gt; Accept-Encoding: gzip,deflate
 {&quot;name&quot;:&quot;Apple MacBook Pro 17&quot;,&quot;data&quot;:{&quot;year&quot;:2024,&quot;price&quot;:2049.99,&quot;CPU model&quot;:&quot;Intel Core i9&quot;,&quot;Hard disk size&quot;:&quot;1 TB&quot;,&quot;color&quot;:&quot;silver&quot;}}
 
-12:44:48.363 response time in milliseconds: 213
+18:48:46.755 response time in milliseconds: 322
 1 &lt; 200
-1 &lt; Date: Mon, 09 Feb 2026 07:14:47 GMT
+1 &lt; Date: Tue, 10 Feb 2026 13:18:46 GMT
 1 &lt; Content-Type: application/json
 1 &lt; Transfer-Encoding: chunked
 1 &lt; Connection: keep-alive
@@ -230,9 +226,9 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
 1 &lt; Vary: Access-Control-Request-Headers
 1 &lt; cf-cache-status: DYNAMIC
 1 &lt; Server-Timing: cfCacheStatus;desc=&quot;DYNAMIC&quot;
-1 &lt; Server-Timing: cfEdge;dur=59,cfOrigin;dur=78
-1 &lt; Report-To: {&quot;group&quot;:&quot;cf-nel&quot;,&quot;max_age&quot;:604800,&quot;endpoints&quot;:[{&quot;url&quot;:&quot;https://a.nel.cloudflare.com/report/v4?s=1qXE0GwHML2t6nznNJANeDwuOb9GSfNQRPKBEr26pfDO2AGpqeOCnalQrJPLkUaSPMb%2BusIW6c8qcEwV9w7%2Bux20R%2BdjlD9djljEm%2F9FOtdihQE%3D&quot;}]}
-1 &lt; CF-RAY: 9cb192687f653b10-BOM
+1 &lt; Server-Timing: cfEdge;dur=69,cfOrigin;dur=66
+1 &lt; Report-To: {&quot;group&quot;:&quot;cf-nel&quot;,&quot;max_age&quot;:604800,&quot;endpoints&quot;:[{&quot;url&quot;:&quot;https://a.nel.cloudflare.com/report/v4?s=62V0lUtksKJMhYyhVNkq8x5MK82ljI%2BRp33XWfWXAYqaSrk5G7qmS7kHHY1LN7%2F5padrrAuN3Zdwajd3B1099jYBUPAOy13rHBWqdLoP%2F87dq0U%3D&quot;}]}
+1 &lt; CF-RAY: 9cbbe4f17ce4ff72-BOM
 1 &lt; alt-svc: h3=&quot;:443&quot;; ma=86400
 {&quot;id&quot;:&quot;ff8081819782e69e019c40f10e582bb6&quot;,&quot;name&quot;:&quot;Apple MacBook Pro 17&quot;,&quot;updatedAt&quot;:&quot;2026-02-09T05:54:02.246+00:00&quot;,&quot;data&quot;:{&quot;year&quot;:2024,&quot;price&quot;:2049.99,&quot;CPU model&quot;:&quot;Intel Core i9&quot;,&quot;Hard disk size&quot;:&quot;1 TB&quot;,&quot;color&quot;:&quot;silver&quot;}}
 
@@ -283,7 +279,7 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
         <span>And</span>&nbsp;<span>print response</span>
       </div>
     </div>
-    <div class="time-cell passed">1</div>
+    <div class="time-cell passed">4</div>
   </div>
 
    
@@ -292,7 +288,7 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
 
   
 
-  <div class="preformatted" data-parent="0.21">12:44:48.366 [print] {
+  <div class="preformatted" data-parent="0.21">18:48:46.760 [print] {
   &quot;id&quot;: &quot;ff8081819782e69e019c40f10e582bb6&quot;,
   &quot;name&quot;: &quot;Apple MacBook Pro 17&quot;,
   &quot;updatedAt&quot;: &quot;2026-02-09T05:54:02.246+00:00&quot;,
@@ -324,7 +320,7 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
         <span>And</span>&nbsp;<span>match response.data.year == 2024</span>
       </div>
     </div>
-    <div class="time-cell passed">1</div>
+    <div class="time-cell passed">11</div>
   </div>
 
    

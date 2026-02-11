@@ -1,9 +1,10 @@
 Feature: Post request list of all objects
 
 Background:
- Given  url 'https://api.restful-api.dev'
+ * def testData = read("testData.csv")
 
 Scenario: Post the list of all objects
+ 	Given  url 'https://api.restful-api.dev'
 	And path  'objects'
 	And request
 	"""{ "name": "Apple MacBook Pro 17",
@@ -17,5 +18,4 @@ Scenario: Post the list of all objects
 	When  method post
 	Then status 200
 	And print response
-
 	

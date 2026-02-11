@@ -7,7 +7,7 @@ public class ManualRunner {
 	
 	@Test
 	public Karate runTest() {
-        return Karate.run("putRequest").relativeTo(getClass());
+        return Karate.run("dataDriven").relativeTo(getClass());
 	}
 
 }

@@ -10,43 +10,42 @@
     <script type="text/javascript" src="res/jquery.tablesorter.min.js"></script>
     <script type="text/javascript" src="res/bootstrap.min.js"></script>
     <script type="text/javascript" src="res/karate-report.js"></script>
-    <title>Karate Tags Report</title>
+    <title>Karate Tags Report</title>  
   </head>
-  <body>
+  <body>   
     <div id="root-container">
       <div id="leftnav">
-        
+                
         <div>
   <div class="nav-logo">
     <a href="https://karatelabs.io">
       <img src="karate-labs-logo-ring.svg" alt="Karate Labs"/>
     </a>
     <div class="nav-count">
-      <div id="nav-pass" class="bg-success">0</div>
-      <div id="nav-fail" class="bg-danger">0</div>
+      <div id="nav-pass" class="bg-success">1</div>
+      <div id="nav-fail" class="bg-danger">2</div>
     </div>
-  </div>
-  <div id="nav-env">
-    <div></div>
   </div>
   <div id="nav-type">
     <div>Tags</div>
-  </div>
+  </div>         
   <div id="nav-date">
-    <div>2026-02-09 12:44:48 pm</div>
-  </div>
+    <div>2026-02-10 06:48:52 pm</div>
+  </div>        
 </div>
 
       </div>
       <div id="content">
         <div class="page-heading alert alert-primary">
           <a href="karate-summary.html">Summary</a>
-        </div>
+        </div>       
         <table class="tags-table table table-sm ">
           <thead>
             <tr>
               <th class="feature-cell">Feature</th>
-              
+              <th classapend="failed">Data</th>
+              <th classapend="passed">Token</th>
+              <th classapend="failed">TokenBased</th>
             </tr>
           </thead>
           <tbody>
@@ -54,8 +53,42 @@
               <td class="feature-cell">
                 <a href="com.api.karate.automation.requests.putRequest.html">com/api/karate/automation/requests/putRequest.feature</a>
               </td>
-              
+              <td classapend="passed"></td>
+              <td classapend="passed"></td>
+              <td classapend="passed"></td>
             </tr>
+            <tr class="failed">
+              <td class="feature-cell">
+                <a href="com.api.karate.automation.requests.getRequest.html">com/api/karate/automation/requests/getRequest.feature</a>
+              </td>
+              <td classapend="passed"></td>
+              <td classapend="passed"></td>
+              <td classapend="failed">X</td>
+            </tr>
+            <tr class="failed">
+              <td class="feature-cell">
+                <a href="com.api.karate.automation.requests.dataDriven.html">com/api/karate/automation/requests/dataDriven.feature</a>
+              </td>
+              <td classapend="failed">X</td>
+              <td classapend="passed"></td>
+              <td classapend="passed"></td>
+            </tr>
+            <tr class="passed">
+              <td class="feature-cell">
+                <a href="com.api.karate.automation.requests.postRequest.html">com/api/karate/automation/requests/postRequest.feature</a>
+              </td>
+              <td classapend="passed"></td>
+              <td classapend="passed"></td>
+              <td classapend="passed"></td>
+            </tr>
+            <tr class="passed">
+              <td class="feature-cell">
+                <a href="com.api.karate.automation.requests.BearerToken.html">com/api/karate/automation/requests/BearerToken.feature</a>
+              </td>
+              <td classapend="passed"></td>
+              <td classapend="passed">X</td>
+              <td classapend="passed"></td>
+            </tr>            
           </tbody>
         </table>
       </div>

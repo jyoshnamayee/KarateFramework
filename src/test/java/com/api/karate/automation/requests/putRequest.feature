@@ -14,11 +14,9 @@ Scenario: Put the list of all objects
       "CPU model": "Intel Core i9",
       "Hard disk size": "1 TB",
       "color": "silver"
-   }
-}"""
+   		}
+	}"""
 	When  method patch
 	Then status 200
 	And print response
 	And match response.data.year == 2024
-
-	
