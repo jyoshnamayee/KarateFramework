@@ -17,12 +17,12 @@ Scenario: Get the list of all objects
 
 @TokenBased
 Scenario: Get the bearer token from bearer token API and use it in the main API
-	Given url 'https://www.quickpickdeal.com/api/Customer/'
-	And path 'GetAllCustomers'
  	* def bearerTokenPath = call read('classpath:com/api/karate/automation/requests/BearerToken.feature@Token')
  	* def bearerToken = bearerTokenPath.Token
  	* def authHeader = 'Bearer ' + bearerToken
  	And print authHeader
+ 	Given url 'https://www.quickpickdeal.com/api/Customer/'
+	And path 'GetAllCustomers'
  	And headers {"Authorization" : '#(authHeader)', "Content-Type" : "application/json"}
  	When  method get
  	Then status 200

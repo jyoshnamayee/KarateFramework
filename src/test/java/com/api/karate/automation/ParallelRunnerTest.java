@@ -44,7 +44,7 @@ public class ParallelRunnerTest {
 		System.out.println("Total Scenarios => " + result.getScenariosTotal() );
 		System.out.println("Total passed scenarios => " + result.getScenariosPassed() );
 		
-		   generateCucumberReport(result.getReportDir());
+		  // generateCucumberReport(result.getReportDir());
 		   Assertions.assertEquals(0, result.getFailCount(), result.getErrorMessages());
 	    }
 
