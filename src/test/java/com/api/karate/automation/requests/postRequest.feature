@@ -18,4 +18,5 @@ Scenario: Post the list of all objects
 	When  method post
 	Then status 200
 	And print response
+	And match response.data.year == 2024
 	
